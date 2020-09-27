@@ -10,7 +10,8 @@
     margin-top:10px;
     }
    .navbar {
-    background-color: lightseagreen;
+    background-color:   #2d313c;
+    
     padding: 10px;
     margin: 0px;
   }
@@ -22,7 +23,7 @@
   .navbar li a {
     text-decoration: none;
     font-size: 20px;
-    color: white;
+    color:  #ffbe00;
     display: block; 
     padding: 10px 30px;
     text-align: center;
@@ -78,7 +79,7 @@ color: rgb(238, 66, 66);
   position: absolute;
   width: 250px;
   left: 0;
-  background-color: lightseagreen;
+  background-color: #2d313c;
   z-index: 100;
   text-align: left;
   display: none;
