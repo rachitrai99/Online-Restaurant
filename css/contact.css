@@ -40,3 +40,12 @@
     font-size: 50px;
     padding: 20px;
 }
+.fa-map-marker-alt {
+    color: #D3D3D3;
+}
+.fa-envelope-open-text{
+    color: #4A89F3;
+}
+.fa-mobile{
+    color: green;
+}
