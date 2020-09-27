@@ -1,0 +1,18 @@
+.gallery { 
+    background-color: lightgray;
+    width: 93.5%;
+    padding: 20px;
+    margin: 0px auto;
+}  
+.gallery img { 
+    width: 400px; 
+    height: 300px;
+    padding: 10px; 
+
+    
+} 
+.gallery img:hover { 
+    filter: drop-shadow(4px 4px 6px black); 
+    transition: 0.2s;
+    transform: scale(1.05);  
+}
