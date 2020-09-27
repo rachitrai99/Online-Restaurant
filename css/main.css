@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top:70px ;
+    
+}
+.container{
+    border: 0px solid;
+    width: 1340px;
+    margin: 0px auto;
+    position: relative;
+}
+.content::after{
+    content: '';
+    display: block;
+    clear: both;
+}
