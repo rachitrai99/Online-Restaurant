@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
+
   
   .d_flex, header {
     width: 100%;
@@ -127,6 +124,10 @@
   
   header ul li.active {
     color: #babbbf;
+  }
+  header ul li a{
+    text-decoration: none;
+    color: #ffbe00;
   }
   
   header ul li.active:after {
