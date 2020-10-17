@@ -5,6 +5,7 @@
 }
 body{
     background-color: rgb(236, 230, 230);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .upper ul{
@@ -14,7 +15,7 @@ body{
 }
 .upper li {
     display: inline-block;
-    font-size: 27px;
+    font-size: 25px;
     margin: 0 auto;
     text-decoration: none;
     padding: 20px 40px;
@@ -22,8 +23,9 @@ body{
 }
 .upper li i{
     background-color: whitesmoke;
+    font-size: 30px;
     border-radius: 50%;
-    padding: 15px;
+    padding: 17px;
     color: rgb(212, 170, 53);
     
 }
@@ -31,6 +33,9 @@ body{
     text-decoration: none;
     color: whitesmoke;
 }
-.upper span{
+.upper li span{
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid;
     
 }
