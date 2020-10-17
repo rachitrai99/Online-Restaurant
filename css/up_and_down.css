@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(236, 230, 230);
+}
+
+.upper ul{
+    text-align: center;
+    background-color: rgb(212, 170, 53);
+    color: whitesmoke;
+}
+.upper li {
+    display: inline-block;
+    font-size: 27px;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 20px 40px;
+    justify-content: center;
+}
+.upper li i{
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding: 15px;
+    color: rgb(212, 170, 53);
+    
+}
+.upper li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.upper span{
+    
+}
