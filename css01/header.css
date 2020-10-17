@@ -1,0 +1,28 @@
+.header1{
+    padding: 5px;
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/pngtree-black-meat-western-food-banner-background-image_194600.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+.logo1{
+    padding: 0px;
+    float: left;
+}
+.logo1 img{
+        display: inline-block;
+        border: 2px solid black;
+        height: 70px;
+        width: 80px;
+}.head1 { 
+    
+    font-size:60px;
+    color:#d0a772;
+    font-weight:bold;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
