@@ -7,58 +7,61 @@
       src="https://kit.fontawesome.com/fb65f5d132.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/navigation.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/copyright.css" />
+    
     <link rel="stylesheet" href="css/section.css" />
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css01/gallery.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css01/navbar.css">
+    <link rel="stylesheet" href="css01/up_and_down.css">
+    <link rel="stylesheet" href="css01/up_and_down.css">
+    <link rel="stylesheet" href="css01/header.css">
+
     <title>Gallery</title>
+    <style>
+      .fas.fa-home{
+        padding: 0px;
+        margin: 0px;
+        font-size: 35px;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <div class="logo">
-          <img src="images/images for gallery/logo.jpeg" alt="logo" />
-        </div>
-        <div class="head1" style="font-size: 70px">FOOD VILLA</div>
+    <div class="container1">
+      <div class="header1">
+       
+        <div class="head1">FOOD VILLA</div>
       </div>
-      <div class="navigation" id="nav">
-        <ul class="navbar">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li>
-            <a href="#">MENU</a>
-            <ul class="submenu">
-              <li><a href="#">STARTER</a></li>
-              <li><a href="#">DRINKS</a></li>
+  </div>
+  <div class="navigation">
+      <input type="checkbox" id="chk">
+        <label for="chk" class="show-button" >
+        <i class="fas fa-bars"></i>
+        </label>
+        <div class="logo1">
+        <img src="images/food-villa-2.jpg" alt=""></div>
+      <ul class="navbar1">
+        <li><a href="index.html"><i id="show-text" title="HOME" class="fas fa-home"></i><span class="show-icon">HOME</span></a></li>
+        <li><a href="menu.html"><i id="show-text" title="MENU" class="fas fa-concierge-bell"></i><span class="show-icon">MENU</span></a>
+          <ul class="submenu">
+              <li ><a href="menu.html#starter"><i title="STARTER" class="fas fa-pizza-slice"></i>STARTER</a></li>
+              <li><a href="menu.html#drinks"><i title="DRINKS" class="fas fa-glass-martini"></i>DRINKS</a></li>
+              <li><a href="menu.html#main-course"><i title="MAIN-COURSE" class="fas fa-utensils"></i>MAIN-COURSE</a></li>
+              <li><a href="menu.html#desert"><i title="DESERT" class="fas fa-cookie-bite"></i>DESERT</a></li>
+            </ul></li>
+        <li><a href="#"><i id="show-text" title="GALLERY" class="fas fa-camera"></i><span class="show-icon">GALLERY</span></a></li>
+        <li><a href="About.html"><i id="show-text" title="ABOUT" class="fas fa-info-circle"></i><span class="show-icon"></i>ABOUT US</span></a></li>
+        <li ><a href="contact.html"><i id="show-text" title="CONTACT" class="fas fa-address-book"></i><span class="show-icon">CONTACT</span></a></li>
+        <li ><a href="login.html"><i id="show-text" title="LOGIN" class="fas fa-user"></i></i><span class="show-icon">LOGIN</span></a></li>
+        <li ><a href="cart.html"><i id="show-text" class="fas fa-shopping-cart"></i><span class="show-icon">CART</span></a></li>
 
-              <li><a href="#">MAIN-COURSE</a></li>
-              <li><a href="#">DESERTS</a></li>
-            </ul>
-          </li>
-          <li><a href="#gallery">GALLERY</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">RESERVATION</a></li>
-        </ul>
-      </div>
-      <div class="navigation" style="width: 220px">
-        <ul class="navbar1">
-          <li>
-            <a href=""><i class="fab fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href=""><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="https://wa.me/919461637475?text=Soni%20Diabities%20Care"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="hide-button">
+          <i class="fas fa-times"></i>
+        </label>
+      </ul>
+    </div>
+     
       <div class="section" id="gallery">GALLERY</div>
       <div class="gallery">
         <a href="images/logo.png"><img src="images/images for gallery/logo.jpeg" alt="log0" /></a>
@@ -72,68 +75,89 @@
         <a href="images/team.JPG"><img src="images/images for gallery/8.jpeg" alt="8" /></a>
       </div>
 
-      <div class="section" id="contact">CONTACT US</div>
-      <div class="content">
-        <div class="contact">
-          <div id="left">
-            <div class="contact_logo">
-              <i class="fas fa-map-marker-alt"></i>
+      <footer>
+        <div class="upper">
+            <div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-volume-control-phone"></i>
+					<div class="overflow-hidden">
+						<h4>Phone</h4>
+						<p class="lead">
+							+01 123-456-4590
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Email</h4>
+						<p class="lead">
+							yourmail@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-map-marker"></i>
+					<div class="overflow-hidden">
+						<h4>Location</h4>
+						<p class="lead">
+							800, Lorem Street, US
+						</p>
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="lower">
+            <div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>About Us</h3>
+					<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Opening hours</h3>
+					<p><span class="text-color">Mon-Tue : </span>9:00 AM - 11:00 PM</p>
+					<p><span class="text-color">Wed-Thu :</span> 9:00 AM - 11:00 PM</p>
+					<p><span class="text-color">Fri-Sat :</span> 9:00 AM - 11:00 PM</p>
+					<p><span class="text-color"> Sunday :</span> 11:00 AM - 11:00 PM</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Contact information</h3>
+					<p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+					<p class="lead"><a href="#">+91 000000000</a></p>
+					<p><a href="#"> foodvilla@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Subscribe</h3>
+					<div class="subscribe_form">
+						<form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+							<button type="submit" class="submit">SUBSCRIBE</button>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
             </div>
-            <div style="color: #ffbe00;">Address:-Food Villa</div>
-          </div>
-          <div id="center">
-            <div id="center">
-              <i class="fas fa-envelope-open-text"></i>
-              <a
-                href="mailto: foodvillae@gmail.com"
-                style="text-decoration: none;color: #ffbe00;"
-                >E-mail:- fooldvilla@gmail.com</a
-              >
+            
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="company-name">All Rights Reserved. &copy; 2020 <a href="#">Food Villa Restaurant</a> <br>
+                             Design By : Kshitij Gupta and Rachit Rai
+                        <br>
+                        <a href="https://github.com/rachitrai99/Online-Restaurant">Github</a>
+                        </p>
+                    </div>
+                </div>
+                
             </div>
-          </div>
-          <div id="right">
-            <i class="fas fa-mobile"></i>
-
-            <a href="tel:+91 7073662430" style="text-decoration: none;color: #ffbe00;"
-              >Call me at:-+91 0000000000</a
-            >
-          </div>
         </div>
-      </div>
-      <div class="content">
-        <div class="copyright">
-          <div>© All rights reserved | FoodVilla.</div>
-        </div>
-        <div class="section" style="padding-bottom: 10px; margin: 0px">
-          <div class="navigation" style="width: 210px; margin: 10px">
-            <ul class="navbar1">
-              <li>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright" style="padding-top: 0px">
-          <a
-            href="#"
-            style="
-              text-decoration: none;
-              font-style: normal;
-              display: inline-block;
-              width: auto;
-              border: 2px solid black;
-              padding: 5px;
-            "
-            >GO TO TOP</a
-          >
-        </div>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
