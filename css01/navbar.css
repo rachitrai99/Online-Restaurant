@@ -1,15 +1,16 @@
-.header {
+.navigation {
     background-color: black;
     width: 100%;
     height: 70px;
-    padding: 0px;
+    padding: 0px 20px;
     position: sticky;
     top: 0px;
     z-index: 100;
     color:  #d0a772;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom:0px 20px;
-    border: 1px solid black;
+    margin:10px 0px;
+    display: inline-block;
+    
   }
 .show-button:hover,
 .hide-button:hover {
@@ -32,18 +33,18 @@
   visibility: hidden;
   z-index: -10;
 }
-.navbar {
+.navbar1 {
     list-style: none;
     float: right;
 }
 
-  .navbar li {
+  .navbar1 li {
     line-height: 70px;
     display: inline-block;
     position: relative;
     
   }
-  .navbar li a {
+  .navbar1 li a {
     text-decoration: none;
     color:  #d0a772;
     display: block;
@@ -53,7 +54,7 @@
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  .navbar li a:hover {
+  .navbar1 li a:hover {
     background-color: white;
     color: black;
     transition: 0.5s;
@@ -81,19 +82,23 @@
   .submenu li:hover{
     background-color: white;
   }
-  .navbar li:hover .submenu{
+  .navbar1 li:hover .submenu{
     display: block;
   }
   .fas{
       padding-right: 5px;
       font-size: 25px;
   }
-  @media(max-width:1159px) and (min-width:950px){
+  .fas.fa-bars{
+      font-size: 40px;
+  }
+  
+  @media(max-width:1271px) and (min-width:1064px){
     #show-text{
         display: none;
     }
 }
-  @media(max-width:949px) and (min-width:800px){
+  @media(max-width:1063px) and (min-width:952px){
   .show-icon{
       display: none;
   }
@@ -107,13 +112,28 @@
         font-size: 20px;
     }
 }
+@media (max-width:951px) and (min-width:812px){
+    .show-icon{
+        display: none;
+    }
+    .fas{
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 35px;
+      align-items: center;
+  }
+      .submenu li a{
+          font-size: 20px;
+      }
 
-  @media (max-width: 799px) {
+}
+
+  @media (max-width:  811px) {
     .show-button,
     .hide-button {
       display: block;
     }
-    .navbar {
+    .navbar1 {
       position: fixed;
       top: 0;
       right: -100%;
@@ -125,14 +145,14 @@
       transition: 0.7s;
       line-height: normal;
     }
-    #chk:checked ~ .navbar {
+    #chk:checked ~ .navbar1 {
       right: 0;
     }
-    .navbar li {
+    .navbar1 li {
       display: block;
       padding: 20px 0;
     }
-    .navbar li a {
+    .navbar1 li a {
       display: block;
     }
     .hide-button {
@@ -140,7 +160,7 @@
       right: 20px;
       top: 20px;
     }
-    .navbar li:hover .submenu{
+    .navbar1 li:hover .submenu{
         display: none;
       }
     
