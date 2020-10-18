@@ -1,94 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/Style.css">
-    <title>Food Villa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css01/navbar.css">
+    <link rel="stylesheet" href="css01/up_and_down.css">
+    
+    <link rel="stylesheet" href="css01/header.css">
+    <link rel="stylesheet" href="css01/about.css">
+
+    <script src="https://kit.fontawesome.com/fb65f5d132.js" crossorigin="anonymous"></script>
+    
+  <title>FOOD VILLA</title>
 </head>
 <body>
-    <div class="bg_img">
-        <img src="images/bg_.png">
-        <div class="social">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-          <i class="fa fa-whatsapp" aria-hidden="true"></i>
-        </div>
-        <div class="bottom_info">
-          <div class="item">
-            <h3><i class="fa fa-circle" aria-hidden="true"></i> Best Cheff</h3>
-            <div class="info_">
-              <div class="box">8</div>
-              <p>Lorem ipsum </br>
-                amet adipisicing </br>
-                elit. </p>
-            </div>
-          </div>
-          <div class="item">
-            <h3><i class="fa fa-circle" aria-hidden="true"></i> Best Menu</h3>
-            <div class="info_">
-              <div class="box">38</div>
-              <p>Lorem ipsum </br>
-                amet adipisicing </br>
-                elit. </p>
-            </div>
-          </div>
+
+  <div class="container1">
+    <div class="header1">
+     
+      <div class="head1">FOOD VILLA</div>
+    </div>
+</div>
+<div class="navigation">
+    <input type="checkbox" id="chk">
+      <label for="chk" class="show-button" >
+      <i class="fas fa-bars"></i>
+      </label>
+      <div class="logo1">
+      <img src="images/food-villa-2.jpg" alt=""></div>
+    <ul class="navbar1">
+      <li><a href="index.html"><i id="show-text" title="HOME" class="fas fa-home"></i><span class="show-icon">HOME</span></a></li>
+      <li><a href="menu.html"><i id="show-text" title="MENU" class="fas fa-concierge-bell"></i><span class="show-icon">MENU</span></a>
+        <ul class="submenu">
+            <li ><a href="menu.html#starter"><i title="STARTER" class="fas fa-pizza-slice"></i>STARTER</a></li>
+            <li><a href="menu.html#drinks"><i title="DRINKS" class="fas fa-glass-martini"></i>DRINKS</a></li>
+            <li><a href="menu.html#main-course"><i title="MAIN-COURSE" class="fas fa-utensils"></i>MAIN-COURSE</a></li>
+            <li><a href="menu.html#desert"><i title="DESERT" class="fas fa-cookie-bite"></i>DESERT</a></li>
+          </ul></li>
+      <li><a href="gallery.html"><i id="show-text" title="GALLERY" class="fas fa-camera"></i><span class="show-icon">GALLERY</span></a></li>
+      <li><a href="#"><i id="show-text" title="ABOUT" class="fas fa-info-circle"></i><span class="show-icon"></i>ABOUT</span></a></li>
+      <li ><a href="#contact"><i id="show-text" title="CONTACT" class="fas fa-address-book"></i><span class="show-icon">CONTACT</span></a></li>
+      <li ><a href="login.html"><i id="show-text" title="LOGIN" class="fas fa-user"></i></i><span class="show-icon">LOGIN</span></a></li>
+      <li ><a href="reservation.html"><i id="show-text" class="fas fa-book"></i><span class="show-icon">RESERVATION</span></a></li>
+
+      <input type="checkbox" id="chk">
+      <label for="chk" class="hide-button">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+  <br>
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------- -->
+  <!-- ABOUT : -->
+  <br> <br>
+  <div class="about-section">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <img src="images/about-img.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-lg-6 col-md-6 text-center">
+        <div class="inner-column">
+          <h1>Welcome To <span>Food Villa Restaurant</span></h1>
+          <h3>Little Story</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
+          <p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
+          <a class="btn btn-lg btn-circle btn-outline-new-white" href="#">RESERVATION</a>
         </div>
       </div>
-      <div class="container">
-        <header>
-          <div class="logo">Food Villa</div>
-          <ul>
-            <li><a href="#"> Home</a></li>
-            <li>Menu</li>
-            <li>About</li>
-            <li><a href="gallery.html"> Gallery</a></li>
-            <li>Contact</li>
-          </ul>
-          <div class="search_nav">
-            <i class="fa fa-search" aria-hidden="true"></i>
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </div>
-        </header>
-        <div class="content_container">
-          <div class="content">
-            <h3>Are you Hungry?</h3>
-            <h1>Don't Wait!</h1>
-            <p>Let start to order food now</p>
-            <div class="cta">checkout menu</div>
-          </div>
-          <div class="dish_img">
-            <img src="images/sample_1.png">
-          </div>
-        </div>
-        <div class="thumb_">
-          <div class="left_ nav"><i class="fa fa-caret-left" aria-hidden="true"></i></div>
-          <div class="right_ nav"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
-          <div class="item">
-            <div class="item_img">
-              <img src="images/sample_2.jpg">
-            </div>
-            <div class="item_content">
-              <h3><i class="fa fa-circle" aria-hidden="true"></i>Breakfast</h3>
-              <p>Lorem ipsum dolor<br>
-                sit amet consectetur <br>
-                adipisicing</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item_img">
-              <img src="images/sample_3.jpg">
-            </div>
-            <div class="item_content">
-              <h3><i class="fa fa-circle" aria-hidden="true"></i>Appetizer</h3>
-              <p>Lorem ipsum dolor<br>
-                sit amet consectetur <br>
-                adipisicing</p>
-            </div>
-          </div>
+      <div class="col-md-12">
+        <div class="inner-pt">
+          <p>Sed tincidunt, neque at egestas imperdiet, nulla sapien blandit nunc, sit amet pulvinar orci nibh ut massa. Proin nec lectus sed nunc placerat semper. Duis hendrerit elit nec sapien porttitor, ut pretium ipsum feugiat. Aenean volutpat porta nisi in gravida. Curabitur pulvinar ligula sed facilisis bibendum. Nullam vitae nulla elit. </p>
+          <p>Integer purus velit, eleifend eu magna volutpat, porttitor blandit lectus. Aenean risus odio, efficitur quis erat eget, mattis tristique arcu. Fusce in ante enim. Integer consectetur elit nec laoreet rutrum. Mauris porta turpis nec tellus accumsan pellentesque. Morbi non quam tempus, convallis urna in, cursus mauris. </p>
         </div>
       </div>
+    </div>
+  <!-- FOOTER SECTION:  -->
+  <footer>
+    <div class="upper">
+        <div class="row">
+    <div class="col-md-4">
+      <i class="fa fa-volume-control-phone"></i>
+      <div class="overflow-hidden">
+        <h4>Phone</h4>
+        <p class="lead">
+          +01 123-456-4590
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <i class="fa fa-envelope"></i>
+      <div class="overflow-hidden">
+        <h4>Email</h4>
+        <p class="lead">
+          yourmail@gmail.com
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <i class="fa fa-map-marker"></i>
+      <div class="overflow-hidden">
+        <h4>Location</h4>
+        <p class="lead">
+          800, Lorem Street, US
+        </p>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="lower">
+        <div class="row">
+    <div class="col-lg-3 col-md-6">
+      <h3>About Us</h3>
+      <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <h3>Opening hours</h3>
+      <p><span class="text-color">Mon-Tue : </span>9:00 AM - 11:00 PM</p>
+      <p><span class="text-color">Wed-Thu :</span> 9:00 AM - 11:00 PM</p>
+      <p><span class="text-color">Fri-Sat :</span> 9:00 AM - 11:00 PM</p>
+      <p><span class="text-color"> Sunday :</span> 11:00 AM - 11:00 PM</p>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <h3>Contact information</h3>
+      <p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+      <p class="lead"><a href="#">+91 000000000</a></p>
+      <p><a href="#"> foodvilla@gmail.com</a></p>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <h3>Subscribe</h3>
+      <div class="subscribe_form">
+        <form class="subscribe_form">
+          <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+          <button type="submit" class="submit">SUBSCRIBE</button>
+          <div class="clearfix"></div>
+        </form>
+      </div>
+      <ul class="list-inline f-social">
+        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="company-name">All Rights Reserved. &copy; 2020 <a href="#">Food Villa Restaurant</a> <br>
+                         Design By : Kshitij Gupta and Rachit Rai
+                    <br>
+                    <a href="https://github.com/rachitrai99/Online-Restaurant">Github</a>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
