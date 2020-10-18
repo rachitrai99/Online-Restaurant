@@ -48,7 +48,7 @@
     text-decoration: none;
     color:  #d0a772;
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     padding: 0px 20px;
     text-align: center;
@@ -93,18 +93,19 @@
       font-size: 40px;
   }
   
-  @media(max-width:1271px) and (min-width:1064px){
+  @media(max-width:1199px) and (min-width:1000px){
     #show-text{
         display: none;
     }
 }
-  @media(max-width:1063px) and (min-width:952px){
+  @media(max-width:999px) and (min-width:944px){
   .show-icon{
       display: none;
   }
   .fas{
+    padding-left:20px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-top: 15px;
     font-size: 35px;
     align-items: center;
 }
@@ -112,13 +113,14 @@
         font-size: 20px;
     }
 }
-@media (max-width:951px) and (min-width:812px){
+@media (max-width:943px) and (min-width:805px){
     .show-icon{
         display: none;
     }
     .fas{
-      padding-right: 10px;
       padding-left: 10px;
+      padding-right:10px;
+      padding-top:15px ;
       font-size: 35px;
       align-items: center;
   }
@@ -128,7 +130,7 @@
 
 }
 
-  @media (max-width:  811px) {
+  @media (max-width:  804px) {
     .show-button,
     .hide-button {
       display: block;
@@ -141,7 +143,7 @@
       height: 100vh;
       background-color: black;
       text-align: center;
-      padding: 80px 0px;
+      padding: 0px;
       transition: 0.7s;
       line-height: normal;
     }
@@ -150,7 +152,7 @@
     }
     .navbar1 li {
       display: block;
-      padding: 20px 0;
+      padding: 15px 0;
     }
     .navbar1 li a {
       display: block;
@@ -158,7 +160,7 @@
     .hide-button {
       position: absolute;
       right: 20px;
-      top: 20px;
+      top: 5px;
     }
     .navbar1 li:hover .submenu{
         display: none;
