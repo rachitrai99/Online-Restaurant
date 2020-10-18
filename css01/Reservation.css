@@ -1,0 +1,34 @@
+.reservation-box{
+	padding: 70px 0px;
+}
+
+.reservation-box h3{
+	padding: 0px 15px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.help-block ul li{
+	color: red;
+}
+
+.form-control[readonly]{
+	background-color: #ffffff;
+}
+
+.form-control{
+	border-radius: 0px;
+	min-height: 50px;
+}
+.form-control:focus{
+	border: 1px solid #d0a772;
+	box-shadow: none;
+}
+
+.form-group .picker__input.picker__input--active{
+	border-color: #d0a772;
+}
+
+.submit-button{
+	margin-top: 20px;
+}
