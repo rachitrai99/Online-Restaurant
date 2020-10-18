@@ -1,8 +1,11 @@
 .menue-heading{
     text-align: center;
-    /* padding: 20px; */
+    /* margin-top: 30px; */
     text-transform: uppercase;
     color: #9b6723;
+    position: relative;
+    padding-bottom: 20px;
+    z-index: 10;
 }
 
 .menue-div .container {
