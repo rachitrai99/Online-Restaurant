@@ -8,6 +8,40 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ALL PAGE TITLE:  */
+.all-page-title{
+    padding: 50px 0px 50px;
+    background: url(../images/all-bg.jpg) no-repeat;
+    /* text goes up but th image remains fixed at a position  */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0; 
+    position: relative;
+    z-index: 2;
+}
+
+.all-page-title:before{
+    background-color: #010101;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.all-page-title h1{
+    font-size: 38px;
+	color: whitesmoke;
+    padding: 0px ;
+    text-align: center;
+}
+
+/* END ALL PAGE TITLE  */
+
+/* START FOOTER  */
 .upper {
     display: flex;
     background: #d0a772;
