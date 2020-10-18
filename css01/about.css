@@ -1,0 +1,33 @@
+.about-section{
+    padding: 10px 0px;
+    margin: 0px 20px;
+}
+.about-section .img-fluid{
+    box-shadow: -10px -10px 0px #d0a772;
+    margin-top: 10px;
+}
+.inner-column h1{
+	font-family: 'Arbutus Slab', serif;
+	font-size: 30px;
+	color: #010101;
+}
+.inner-column h1 span{
+	color: #eba626;
+}
+.inner-column h4{
+	font-size: 16px;
+	font-weight: 500;
+}
+.inner-column p{
+	font-size: 18px;
+}
+.inner-column .btn-outline-new-white{
+    color: #d0a772;
+    border-radius: 3px solid #a7712a;
+    border: 2px solid #9b6723;
+    margin-bottom: 10px;
+}
+.inner-column .btn-outline-new-white:hover{
+    color: #ffffff;
+    background-color: #d0a772;
+}
