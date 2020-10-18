@@ -33,7 +33,8 @@ body{
 }
 
 .all-page-title h1{
-    font-size: 38px;
+    font-size: 43px;
+    letter-spacing: 2px;
 	color: whitesmoke;
     padding: 0px ;
     text-align: center;
