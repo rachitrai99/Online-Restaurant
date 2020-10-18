@@ -1,0 +1,47 @@
+.banner1 {
+    width: 80%;
+    height: 80vh;
+    min-height: 80vh;
+    max-height: 80vh;
+    background-size: 100% 100% ;
+    margin: 0px auto;
+    animation:slider 80s infinite  ease-in-out;
+    border: 5px solid black;
+    box-shadow: 10px 10px chocolate;
+    
+
+  }
+  @keyframes slider{
+    0%{background-image: url(../images/images_for_gallery/about-img.jpg);}
+    10%{background-image: url(../images/images_for_gallery/1.jpeg);}
+    20%{background-image: url(../images/images_for_gallery/2.jpeg);}
+    30%{background-image: url(../images/images_for_gallery/3.jpeg);}
+    40%{background-image: url(../images/images_for_gallery/4.jpeg);}
+    50%{background-image: url(../images/images_for_gallery/5.jpeg);}
+    60%{background-image: url(../images/images_for_gallery/6.jpeg);}
+    70%{background-image: url(../images/images_for_gallery/7.jpeg);}
+    80%{background-image: url(../images/images_for_gallery/8.jpeg);}
+    90%{background-image: url(../images/images_for_gallery/food-2068217_1920\ \(1\).jpg);}
+  100%{background-image: url(../images/images_for_gallery/footerBg.jpeg);}
+    }
+  
+  .banner1 img {
+    width: 100%;
+    height: 650px;  
+  }
+  @media (max-width:749px) and (min-width:500px){
+    .banner1{
+      width:70%;
+      height:50vh;
+      max-height:50vh ;
+      min-height: 50vh;
+    }
+  }
+  @media (max-width:499px){
+    .banner1{
+      width:90%;
+      height:40vh;
+      max-height:40vh ;
+      min-height: 40vh;
+    }
+  }
