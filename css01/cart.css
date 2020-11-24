@@ -1,0 +1,100 @@
+h1.subMenuName{
+    font-size: 40px;
+    color: black;
+    
+    top: 70px;
+    background-color: #ECE6E6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    padding: 10px;
+}
+hr{
+    width: 100%;
+    position: sticky;
+    top: 135px;
+    border-width: 3px;
+    border-color: black;
+    margin: 0px;
+}
+.subMenu{
+    width: 85%;
+    padding: 10px;
+
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.dish{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black ;
+    padding: 20px;
+}
+.dishImage{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+
+}
+.vegNonveg{
+    display: inline-block;
+    
+}
+.dishDescription{
+
+    display: inline;
+    max-width: 80%;
+    
+}
+.counter{
+    display: inline;
+    
+}
+.vegNonveg{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+img{
+    position: relative;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+}
+.addToCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.counter{
+    display: flex;
+    flex-direction: row;
+  }
+  .counterValue {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+  }
+  button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    outline: none;
+    margin: 0px 40px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .addToCart{
+      width: 150px;
+      
+  }
