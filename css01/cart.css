@@ -25,6 +25,8 @@ hr{
 
     margin: 10px auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .dish{
@@ -98,3 +100,49 @@ img{
       width: 150px;
       
   }
+  .amount{
+      padding: 20px;
+      font-size: 20px;
+      width: 150px;
+      text-align: center;
+  }
+  #checkOut{
+      width: 200px;
+      height: 60px;
+      font-size: 40px;
+      display: none;
+      margin: 0px auto;
+  }
+  #totalAmount{
+
+    width: 330px;
+    text-align: center;
+    height: 60px;
+    font-size: 40px;
+    display: flex;
+    margin: 0px auto;
+
+  }
+
+.checkBox{
+    width: 600px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    
+}
+
+#tableBox{
+
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+}
+
+td,th{
+    border-right: 2px solid black;
+    font-size: 100px;
+    text-align: center;
+}
