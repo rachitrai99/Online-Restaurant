@@ -80,7 +80,7 @@
   <h1 class="subMenuName">STARTER</h1>
   <hr>
 
-  <div class="subMenu" >
+  <div class="subMenu">
 
     <div class="dish" id="burger">
 
@@ -99,47 +99,58 @@
           <button id="inc" onclick="inc(event)" value="burger">+</button>
 
         </div>
-        <button class="addToCart" value="burger" onclick = "addToCart(event)">Add to cart</button>
+        <button class="addToCart" value="burger" onclick="addToCart(event)">Add to cart</button>
       </div>
       <div class="amount">
 
       </div>
-      
-     
-        
+
+
+
     </div>
-    
+
     <div class="dish" id="samosa">
 
-        <div class="dishImage" id="samosaImage"></div>
-        <div class="vegNonveg" id="burgerVegNonveg"><img
-            src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
-        </div>
-        <div class="dishDescription" id="burgerDescription">
-          <h2>SAMOSA</h2>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, </P>
-        </div>
-        <div class="addToCart">
-          <div class="counter">
-            <button id="dec" onclick="dec(event)" value = "samosa" name="dec">-</button>
-            <div id="samosaCounterValue" class="counterValue">0</div>
-            <button id="inc" onclick="inc(event)" value = "samosa">+</button>
-  
-          </div>
-          <button class="addToCart" value="samosa" onclick = "addToCart(event)">Add to cart</button>
-        </div>
+      <div class="dishImage" id="samosaImage"></div>
+      <div class="vegNonveg" id="burgerVegNonveg"><img
+          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+      </div>
+      <div class="dishDescription" id="burgerDescription">
+        <h2>SAMOSA</h2>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, </P>
+      </div>
+      <div class="addToCart">
+        <div class="counter">
+          <button id="dec" onclick="dec(event)" value="samosa" name="dec">-</button>
+          <div id="samosaCounterValue" class="counterValue">0</div>
+          <button id="inc" onclick="inc(event)" value="samosa">+</button>
 
-    
-    
+        </div>
+        <button class="addToCart" value="samosa" onclick="addToCart(event)">Add to cart</button>
+      </div>
 
+
+
+
+    </div>
   </div>
 
   <!-- cart -->
 
-  <div class="subMenu" id="cart1" >
+  <h1 class="subMenuName">CART</h1>
 
-   
-  
+  <hr>
+
+  <p id="emptyCart" style="margin: 0px auto;"><b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b></p>
+
+  <div class="subMenu" id="cart1">
+
+    <br><br>
+
+
+
+
+
 
 
   </div>
@@ -148,7 +159,7 @@
 
 
 
-</div>
+
   <!-- FOOTER SECTION:  -->
   <footer>
     <div class="upper" id="contact">
@@ -237,298 +248,292 @@
     </div>
   </footer>
 
-  <script >
+  <script>
 
     //counter
 
 
 
-var arrayOfCounter = [];
+    var arrayOfCounter = [];
 
 
-function dec(e) {
+    function dec(e) {
 
-  var itemId = e.target.value;
+      var itemId = e.target.value;
 
-  var j = 0;
+      var j = 0;
 
-  for (var i = 0; i < arrayOfCounter.length; i++) {
+      for (var i = 0; i < arrayOfCounter.length; i++) {
 
 
-    if (arrayOfCounter[i][0] == itemId) {
-
-      j = 1;
-
-      break;
-
-    }
-
-  }
-
-  if (j == 1) {
-
-    var counter = parseInt(document.getElementById(itemId + "CounterValue").innerHTML);
-
-    counter = counter - 1;
-
-
-
-    if (counter == 0) {
-
-
-      arrayOfCounter.splice(i,1);
-
-      console.table(arrayOfCounter);
-
-      //check = itemId + "Cart";
-
-      /*for (let i = 0; i < hold.length; i++) {
-
-
-
-        if (hold[i] == check) {
-
-          console.log(check);
-
-          document.getElementById(check).remove;
-
-          hold.pop(i);
-
-          break;
-
-        }
-
-      }*/
-
-    } else {
-
-      arrayOfCounter[i] = [itemId, counter];
-
-      console.table(arrayOfCounter);
-
-    }
-    document.getElementById(itemId + "CounterValue").innerHTML = counter;
-
-    document.getElementById(itemId + "CounterValueCart").innerHTML = counter;
-
-  }
-}
-function inc(e) {
-
-  var itemId = e.target.value;
-
-  let j = 0;
-
-  for (var i = 0; i < arrayOfCounter.length; i++) {
-
-
-    if (arrayOfCounter[i][0] == itemId) {
-
-      j = 1;
-
-      break;
-
-    }
-
-  }
-
-  counterName = itemId + "CounterValue";
-
-  var counter = parseInt(document.getElementById(itemId + "CounterValue").innerHTML);
-
-  counter = counter + 1;
-
-
-
-  arrayOfCounter[i] = [itemId, counter];
-
-  console.table(arrayOfCounter);
-
-  document.getElementById(itemId + "CounterValue").innerHTML = arrayOfCounter[i][1];
-
-  document.getElementById(itemId + "CounterValueCart").innerHTML = arrayOfCounter[i][1];
-
-  
-
-
-
-}
-
-//addToCart
-var hold = [];
-
-function addToCart(e) {
-
-  var itemId = e.target.value;
-
-  var itemIdCart = e.target.value + "Cart";
-
-  let counter = parseInt(document.getElementById(e.target.value + "CounterValue").innerHTML);
-
-
-  if (counter == 0) {
-
-
-    for (var i = 0; i < hold.length; i++) {
-
-      if (hold[i] == itemIdCart) {
-
-        break;
-
-      }
-
-    }
-
-    if (i == hold.length) {
-
-    }
-
-    else {
-
-      console.log(itemIdCart);
-
-      var el = document.getElementById(itemIdCart);
-
-      el.remove();
-
-      hold.pop(i-1);
-
-      console.log(hold);
-
-    }
-
-  } else {
-
-    var addToCart = e.target.parentNode.parentNode;
-
-      console.table(hold);
-
-      let j = 0;
-
-      for (let i = 0; i < hold.length; i++) {
-
-        if (hold[i] == itemIdCart) {
+        if (arrayOfCounter[i][0] == itemId) {
 
           j = 1;
 
           break;
-        }
 
+        }
 
       }
-
-      var item = addToCart.cloneNode(true);
-
-
-
-      item.id = itemIdCart;
-
-      item.childNodes[7].childNodes[1].childNodes[3].id = e.target.value + "CounterValueCart" ;
-
-
-
-      var drop = item.childNodes[7].childNodes[3];
-
-      drop.remove();
-
-      var iDiv = document.createElement('button');
-
-      iDiv.className = 'addToCart';
-
-      iDiv.id = e.target.value + "AddToCart";
-
-      iDiv.innerHTML = "Delete";
-
-      iDiv.value = itemIdCart;
-
-      iDiv.addEventListener("click",function (e){
-
-        var el = document.getElementById(itemIdCart);
-
-        el.remove();
-
-        document.getElementById(itemId + "CounterValue").innerHTML = 0;
-
-        console.log(hold);
-
-        for(i =0;i<hold.length;i++){
-
-          if(hold[i] == e.target.value) {
-
-
-            hold.splice(i,1);
-
-            break;
-
-          }
-
-        }
-
-        for( i =0;i<arrayOfCounter.length;i++){
-          
-          console.log("hello");
-
-          if(arrayOfCounter[i][0] == itemId) {
-
-            
-
-            arrayOfCounter.splice(i,1);
-
-            break;
-
-          }
-
-        }
-        
-        console.table(arrayOfCounter);
-
-        console.log(hold);
-
-        
-      });
-
-      item.childNodes[7].appendChild(iDiv);
-
-      
-
 
       if (j == 1) {
 
-        document.getElementById(itemIdCart).replaceWith(item);
+        var counter = parseInt(document.getElementById(itemId + "CounterValue").innerHTML);
 
-      } else {
+        counter = counter - 1;
 
-        hold.push(itemIdCart);
+
+
+        if (counter == 0) {
+
+
+          arrayOfCounter.splice(i, 1);
+
+
+
+
+
+        } else {
+
+          arrayOfCounter[i] = [itemId, counter];
+
+        }
+        document.getElementById(itemId + "CounterValue").innerHTML = counter;
+
+        if(hold.length !=0){
+
+        document.getElementById(itemId + "CounterValueCart").innerHTML = counter;
+        
+      }
+
+      }
+    }
+    function inc(e) {
+
+      var itemId = e.target.value;
+
+      let j = 0;
+
+      for (var i = 0; i < arrayOfCounter.length; i++) {
+
+
+        if (arrayOfCounter[i][0] == itemId) {
+
+          j = 1;
+
+          break;
+
+        }
+
+      }
+
+      counterName = itemId + "CounterValue";
+
+      var counter = parseInt(document.getElementById(itemId + "CounterValue").innerHTML);
+
+      counter = counter + 1;
+
+
+
+      arrayOfCounter[i] = [itemId, counter];
+
+      //console.table(arrayOfCounter);
+
+      document.getElementById(itemId + "CounterValue").innerHTML = arrayOfCounter[i][1];
+
+      if(hold.length != 0) {
+
+      document.getElementById(itemId + "CounterValueCart").innerHTML = arrayOfCounter[i][1];
 
       }
 
 
-      //console.log(document.getElementById('burgerCart'));
-
-      //var list = document.getElementById()
-      //item.lastChild.id = "addToCart1";
-      //item.childNodes[7].childNodes[1].id = "";
-
-      //console.log(item.childNodes[7].childNodes[1]
 
 
 
+    }
 
-      //console.log(item.childNodes[7].childNodes[3]);
-      //console.log(document.getElementById());
-      //document.getElementById("item.id").getElementByClass("addToCart").getElementById("addToCart").innerHTML = "Delete";
-      document.getElementById("cart1").appendChild(item);
-      // item.find('#addToCart').innerHTML = "delete";
+    //addToCart
+    var hold = [];
 
-
+    function addToCart(e) {
 
 
 
+      var itemId = e.target.value;
+
+      var itemIdCart = e.target.value + "Cart";
+
+      let counter = parseInt(document.getElementById(e.target.value + "CounterValue").innerHTML);
+
+      if ((hold.length == 0) && (counter != 0)) {
+
+        let el = document.getElementById("emptyCart");
 
 
-  }
+        el.innerHTML = "";
 
-}
+      }
+      if (counter == 0) {
+
+
+        for (var i = 0; i < hold.length; i++) {
+
+          if (hold[i] == itemIdCart) {
+
+            break;
+
+          }
+
+        }
+
+        if (i == hold.length) {
+
+        }
+
+        else {
+
+
+          var el = document.getElementById(itemIdCart);
+
+
+          el.remove();
+
+          hold.splice(i,1);
+
+          if(hold.length == 0){
+
+            let el = document.getElementById("emptyCart");
+
+
+            el.innerHTML = '<b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b>';
+
+
+          }
+
+        }
+
+      } else {
+
+        var addToCart = e.target.parentNode.parentNode;
+
+        let j = 0;
+
+        for (let i = 0; i < hold.length; i++) {
+
+          if (hold[i] == itemIdCart) {
+
+            j = 1;
+
+            break;
+          }
+
+
+        }
+
+        var item = addToCart.cloneNode(true);
+
+
+
+        item.id = itemIdCart;
+
+        item.childNodes[7].childNodes[1].childNodes[3].id = e.target.value + "CounterValueCart";
+
+
+
+        var drop = item.childNodes[7].childNodes[3];
+
+        drop.remove();
+
+        var iDiv = document.createElement('button');
+
+        iDiv.className = 'addToCart';
+
+        iDiv.id = e.target.value + "AddToCart";
+
+        iDiv.innerHTML = "Delete";
+
+        iDiv.value = itemIdCart;
+
+        iDiv.addEventListener("click", function (e) {
+
+          var el = document.getElementById(itemIdCart);
+
+          el.remove();
+
+          document.getElementById(itemId + "CounterValue").innerHTML = 0;
+
+          //console.log(hold);
+
+          for (i = 0; i < hold.length; i++) {
+
+            if (hold[i] == e.target.value) {
+
+
+              hold.splice(i, 1);
+
+              console.log(hold);
+              
+              if (hold.length == 0) {
+
+              let check = document.getElementById("emptyCart");
+
+
+              check.innerHTML ='<b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b>';
+
+            }
+
+              break;
+
+            }
+
+          }
+
+          for (i = 0; i < arrayOfCounter.length; i++) {
+
+
+            if (arrayOfCounter[i][0] == itemId) {
+
+
+
+              arrayOfCounter.splice(i, 1);
+
+              break;
+
+            }
+
+            
+
+          }
+
+          //console.table(arrayOfCounter);
+
+          //console.log(hold);
+
+
+        });
+
+        item.childNodes[7].appendChild(iDiv);
+
+
+
+
+        if (j == 1) {
+
+          document.getElementById(itemIdCart).replaceWith(item);
+
+        } else {
+
+          hold.push(itemIdCart);
+
+        }
+
+        document.getElementById("cart1").appendChild(item);
+
+
+      }
+
+    }
 
 
   </script>
