@@ -94,14 +94,15 @@
       </div>
       <div class="addToCart">
         <div class="counter">
-          <button id="dec" onclick="dec(event)" value="burger" name="dec">-</button>
+          <button id="dec" onclick="dec(event)" value="burger" name="50">-</button>
           <div id="burgerCounterValue" class="counterValue">0</div>
-          <button id="inc" onclick="inc(event)" value="burger">+</button>
+          <button id="inc" onclick="inc(event)" value="burger" name="50">+</button>
 
         </div>
         <button class="addToCart" value="burger" onclick="addToCart(event)">Add to cart</button>
       </div>
-      <div class="amount">
+      <div class="amount" id="burgerAmount">
+        Amount: Rs 0
 
       </div>
 
@@ -117,19 +118,22 @@
       </div>
       <div class="dishDescription" id="burgerDescription">
         <h2>SAMOSA</h2>
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, </P>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, <br><b>Price: </b><b>20</b> </P>
       </div>
       <div class="addToCart">
         <div class="counter">
-          <button id="dec" onclick="dec(event)" value="samosa" name="dec">-</button>
+          <button id="dec" onclick="dec(event)" value="samosa" name="20">-</button>
           <div id="samosaCounterValue" class="counterValue">0</div>
-          <button id="inc" onclick="inc(event)" value="samosa">+</button>
+          <button id="inc" onclick="inc(event)" value="samosa" name="20">+</button>
 
         </div>
         <button class="addToCart" value="samosa" onclick="addToCart(event)">Add to cart</button>
       </div>
 
+      <div class="amount" id="samosaAmount">
+        Amount: Rs 0
 
+      </div>
 
 
     </div>
@@ -143,17 +147,15 @@
 
   <p id="emptyCart" style="margin: 0px auto;"><b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b></p>
 
+
   <div class="subMenu" id="cart1">
 
     <br><br>
 
-
-
-
-
-
-
   </div>
+
+  <p class="totalAmount" id="totalAmount"></p>
+  <button id="checkOut" onclick="checkOut()">Checkout</button>
 
 
 
@@ -282,6 +284,11 @@
 
         counter = counter - 1;
 
+        var amount = (counter * parseInt(e.target.name));
+
+
+
+
 
 
         if (counter == 0) {
@@ -295,16 +302,35 @@
 
         } else {
 
-          arrayOfCounter[i] = [itemId, counter];
+          arrayOfCounter[i] = [itemId, counter, amount];
+
+          console.table(arrayOfCounter);
+
 
         }
         document.getElementById(itemId + "CounterValue").innerHTML = counter;
 
-        if(hold.length !=0){
+        document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
 
-        document.getElementById(itemId + "CounterValueCart").innerHTML = counter;
-        
-      }
+        if (hold.length != 0) {
+
+          document.getElementById(itemId + "CounterValueCart").innerHTML = counter;
+
+          document.getElementById(itemId + "AmountCart").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+          var totalAmount = 0;
+
+          for (i = 0; i < arrayOfCounter.length; i++) {
+
+            totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+          }
+
+          document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+
+
+        }
 
       }
     }
@@ -333,17 +359,35 @@
 
       counter = counter + 1;
 
+      var amount = (counter * parseInt(e.target.name));
 
 
-      arrayOfCounter[i] = [itemId, counter];
+
+      arrayOfCounter[i] = [itemId, counter, amount];
+
+      console.table(arrayOfCounter);
 
       //console.table(arrayOfCounter);
 
       document.getElementById(itemId + "CounterValue").innerHTML = arrayOfCounter[i][1];
 
-      if(hold.length != 0) {
+      document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
 
-      document.getElementById(itemId + "CounterValueCart").innerHTML = arrayOfCounter[i][1];
+      if (hold.length != 0) {
+
+        document.getElementById(itemId + "CounterValueCart").innerHTML = arrayOfCounter[i][1];
+
+        document.getElementById(itemId + "AmountCart").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+        var totalAmount = 0;
+
+        for (i = 0; i < arrayOfCounter.length; i++) {
+
+          totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+        }
+
+        document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
 
       }
 
@@ -373,6 +417,20 @@
 
         el.innerHTML = "";
 
+        document.getElementById("checkOut").style.display = "flex";
+
+        var totalAmount = 0;
+
+        for (i = 0; i < arrayOfCounter.length; i++) {
+
+          totalAmount = totalAmount + (arrayOfCounter[i][2]);
+
+        }
+
+        document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+
+
       }
       if (counter == 0) {
 
@@ -399,14 +457,18 @@
 
           el.remove();
 
-          hold.splice(i,1);
+          hold.splice(i, 1);
 
-          if(hold.length == 0){
+          if (hold.length == 0) {
 
             let el = document.getElementById("emptyCart");
 
 
             el.innerHTML = '<b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b>';
+
+            document.getElementById("checkOut").style.display = "none";
+
+            document.getElementById("totalAmount").innerHTML = "";
 
 
           }
@@ -431,6 +493,16 @@
 
         }
 
+        var totalAmount = 0;
+
+        for (i = 0; i < arrayOfCounter.length; i++) {
+
+          totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+        }
+
+        document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
         var item = addToCart.cloneNode(true);
 
 
@@ -439,7 +511,7 @@
 
         item.childNodes[7].childNodes[1].childNodes[3].id = e.target.value + "CounterValueCart";
 
-
+        item.childNodes[9].id = e.target.value + "AmountCart";
 
         var drop = item.childNodes[7].childNodes[3];
 
@@ -463,7 +535,33 @@
 
           document.getElementById(itemId + "CounterValue").innerHTML = 0;
 
+          document.getElementById(itemId + "Amount").innerHTML = 0;
+
           //console.log(hold);
+
+
+
+          for (i = 0; i < arrayOfCounter.length; i++) {
+
+
+            if (arrayOfCounter[i][0] == itemId) {
+
+              arrayOfCounter.splice(i, 1);
+
+              break;
+
+            }
+          }
+
+          var totalAmount = 0;
+
+          for (i = 0; i < arrayOfCounter.length; i++) {
+
+            totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+          }
+
+          document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
 
           for (i = 0; i < hold.length; i++) {
 
@@ -472,37 +570,22 @@
 
               hold.splice(i, 1);
 
-              console.log(hold);
-              
               if (hold.length == 0) {
 
-              let check = document.getElementById("emptyCart");
+                let check = document.getElementById("emptyCart");
 
 
-              check.innerHTML ='<b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b>';
+                check.innerHTML = '<b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b>';
 
-            }
+                document.getElementById("checkOut").style.display = "none";
 
-              break;
+                document.getElementById("totalAmount").innerHTML = "";
 
-            }
-
-          }
-
-          for (i = 0; i < arrayOfCounter.length; i++) {
-
-
-            if (arrayOfCounter[i][0] == itemId) {
-
-
-
-              arrayOfCounter.splice(i, 1);
+              }
 
               break;
 
             }
-
-            
 
           }
 
@@ -534,6 +617,20 @@
       }
 
     }
+
+    function checkOut() {
+
+      //sessionStorage.setItem('myArray', arrayOfCounter);
+      
+      window.sessionStorage.setItem("items", JSON.stringify(arrayOfCounter));
+
+
+      window.location.href = "checkOut.html";
+
+
+    }
+
+
 
 
   </script>
