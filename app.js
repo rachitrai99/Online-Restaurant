@@ -1,6 +1,7 @@
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 
+
 const app = express();
 
 //Ejs
@@ -11,6 +12,6 @@ app.set('view engine', 'ejs');
 app.use('/',require('./routes/index'));
 app.use('/users', require('./routes/users'));
 
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-app.listen(PORT, console.log('Server started on port ${PORT}'));
+app.listen(port, () => { console.log('Server started on port ${port}');})
