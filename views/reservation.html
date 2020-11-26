@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="css01/Reservation.css">
   <link rel="stylesheet" href="css/section.css">
 
-    <script src="https://kit.fontawesome.com/fb65f5d132.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/fb65f5d132.js" crossorigin="anonymous"></script>
+	
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+
     
 </head>
 <body>
@@ -81,13 +84,13 @@
 									<h3>Book a table</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input id="input_date" class="datepicker picker__input form-control" name="date" type="date" value="" required  placeholder="Select date">
+											<input id="input_date" class="datepicker picker__input form-control" name="date" type="date" value=""  placeholder="Select date">
 											<div class="help-block with-errors"></div>
 										</div>                                 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input id="input_time" class="time form-control picker__input" type="time" required placeholder="Select time">
+											<input id="input_time" class="time form-control picker__input" type="time" required placeholder="Select time" value="">
 											<div class="help-block with-errors"></div>
 										</div>                                 
 									</div>
@@ -111,19 +114,19 @@
 									<h3>Contact Details</h3>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+											<input type="text" class="form-control" id="name" name="name" value="" placeholder="Your Name" required data-error="Please enter your name">
 											<div class="help-block with-errors"></div>
 										</div>                                 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+											<input type="text" placeholder="Your Email" id="email" class="form-control" name="email" required data-error="Please enter your email" value="">
 											<div class="help-block with-errors"></div>
 										</div> 
 									</div>
 									<div class="col-md-12">
 										<div class="form-group">
-											<input type="text" placeholder="Your Numbar" id="phone" class="form-control" name="phone" required data-error="Please enter your Numbar">
+											<input type="text" placeholder="Your Numbar" id="phone" class="form-control" name="phone" required data-error="Please enter your Numbar" value="" >
 											<div class="help-block with-errors"></div>
 										</div> 
 									</div>
@@ -229,6 +232,67 @@
                 
             </div>
         </div>
-    </footer>
+	</footer>
+	
+
+	<script>
+
+		document.getElementById("submit").onclick = function doStuff(e){
+
+			e.preventDefault();
+
+			var date = document.getElementById("input_date").value;
+
+			var time = document.getElementById("input_time").value;
+
+			var person = document.getElementById("person").value;
+
+			var name = document.getElementById("name").value;
+
+			var email = document.getElementById("email").value;
+
+			var number = document.getElementById("phone").value;
+
+			if(date == "" || time == "" || person == "" || name == "" || email =="" || number == "") {
+
+				alert("Please enter all your feilds");
+
+			} else {
+
+
+				
+          Email.send({
+            Host: "smtp.gmail.com",
+            Username: "tarunchanchal2020@gmail.com",
+            Password: "Wireless1996#",
+            To: "kshitij.gupta_cs18@gla.ac.in",
+            From: "tarunchanchal2020@gmail.com",
+            Subject: "Name of patient = " + name,
+            Body:
+              "Name =" +
+              name +
+              "<br>" +
+              " phn =" +
+              phone +
+              "<br>" +
+              " email = " +
+              email +
+              "<br>" +
+              " no. of persons=" +
+              person +
+              "<br>" +
+              " date =" +
+			  date +
+			  "<br>" +
+              " time=" +
+              time 	  
+          }).then((message) => alert("your seats are reserved"));
+			}
+
+			
+
+
+		}
+	</script>
 </body>
 </html>
