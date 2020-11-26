@@ -309,17 +309,21 @@ td,th{
     .checkBox{
         width: 600px;
         background-color: white;
-        padding: 10px;
+        padding: 40px;
         border-radius: 10px;
         margin: 10px auto;
         
     }
     
-    #tableBox{
+    .tableBox{
     
         margin: 0 auto;
-        border-collapse: collapse;
-        width: 100%;
+        width: 90%;
+    }
+
+    .ulist{
+        list-style: none;
+        font-size: 25px;
     }
     }
     
