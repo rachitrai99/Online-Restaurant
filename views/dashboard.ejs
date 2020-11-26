@@ -1,50 +1,118 @@
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
 <div class="container1">
     <div class="header1">
-     
-      <div class="head1">FOOD VILLA</div>
+
+        <div class="head1">FOOD VILLA</div>
     </div>
 </div>
 
 <div class="navigation">
     <input type="checkbox" id="chk">
-      <label for="chk" class="show-button" >
-      <i class="fas fa-bars"></i>
-      </label>
-      <div class="logo1">
-          <img src="images/food-villa-2.jpg" alt="">
-      </div>
-  <br>
-    </div >
+    <label for="chk" class="show-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <div class="logo1">
+        <img src="images/food-villa-2.jpg" alt="">
+    </div>
+    <br>
+</div>
 
-  
+
 
 <!-- <p class="lead mb-3">Welcome <%= user.name %></p> -->
-<h2 class="col-md-6" style="padding-left: 10px;">Welcome <%= user.name %></h2>
+<h2 class="col-md-6" style="padding-left: 10px;">Welcome <span id="name"> <%= user.name %></span></h2>
 <br> <br> <br>
 
 <a href="cart.html" class="btn btn-outline-secondary btn-lg">Logout</a>
 
 <div class="checkBox">
-    <div id="tableBox"></div>
+    <div class="tableBox" id="tableBox"></div>
 </div>
 
+<label for="contact">Enter your contact number</label>
+<input type="text" id="contact" value="" placeholder="e.g.8923213717">
+
+<label for="address">Enter your address</label>
+<input type="text" id="address" value=""  placeholder="e.g.Thakur dwara senthal (bareilly)">
+
+<button id="placeOrder"  style="width: 200px;height: 50px;">Place Order</button>
+<br>
+<br>
+<h1 id="confirm" style="display: none;">Your order has been successfully placed.We will deliver it soon.</h1>
 <script>
 
-var rows =JSON.parse(sessionStorage.getItem("items"));
-console.log(rows);
+    var rows = JSON.parse(sessionStorage.getItem("items"));
+    console.log(rows);
 
-var html = "<p>";
-for (var i = 0; i < rows.length; i++) {
-    html+="<p>";
-    html+="  "+rows[i][0]+"  ";
-    html+="  "+rows[i][1]+"  ";
-    html+="  "+rows[i][2]+"  ";
-    
-    html+="</p>";
+    if (rows == null) {
 
-}
-html+="</p>";
+        window.location.href = "cart.html";
 
-console.log(html);
-document.getElementById("tableBox").innerHTML = html;
+
+    } else {
+
+        console.log(rows);
+
+        var html = '<p > <h2>List of items ordered</h2><ul style = "list-style-type :none;">' ;
+        for (var i = 0; i < rows.length; i++) {
+            html += '<li style = "list-style-type :none;word-spacing:25px; font-size:25px">' + (i+1);
+            html += "  " + rows[i][0] + "  ";
+            html += "  " + rows[i][1] + "  ";
+            html += "  " + rows[i][2] + "  ";
+
+            html += "</li>";
+
+        }
+        html += "</p>";
+
+        sessionStorage.clear();
+
+        document.getElementById("tableBox").innerHTML = html;
+
+        function placeOrder() {
+
+
+
+        }
+
+
+    }
+
+     document.getElementById("placeOrder").onclick =  function placeOrder(e) {
+
+        e.preventDefault();
+        console.log("hello");
+
+        var contact = document.getElementById("contact").value;
+        var address = document.getElementById("address").value;
+
+        if (contact == "" && address == "") {
+
+            alert("Please insert all the feilds.")
+
+        } else {
+            
+            
+            document.getElementById("placeOrder").style.display = "none";
+
+            document.getElementById("confirm").style.display = "block";
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "uzumki002@gmail.com",
+                Password: "jaypee01",
+                To: "kshitij.gupta_cs18@gla.ac.in",
+                From: "uzumki002@gmail.com",
+                Subject: "Name  = "+  document.getElementById("name"),
+                Body:
+                    rows + "     " + contact + "   " + address + "    "
+            }).then((message) => alert(message));
+
+
+        }
+
+
+
+    }
+
 </script>
