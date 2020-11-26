@@ -158,17 +158,17 @@
 var rows =JSON.parse(sessionStorage.getItem("items"));
 console.log(rows);
 
-var html = "<table>";
+var html = "<p>";
 for (var i = 0; i < rows.length; i++) {
-    html+="<tr>";
-    html+="<td>"+rows[i][0]+"</td>";
-    html+="<td>"+rows[i][1]+"</td>";
-    html+="<td>"+rows[i][2]+"</td>";
+    html+="<p>";
+    html+="  "+rows[i][0]+"  ";
+    html+="  "+rows[i][1]+"  ";
+    html+="  "+rows[i][2]+"  ";
     
-    html+="</tr>";
+    html+="</p>";
 
 }
-html+="</table>";
+html+="</p>";
 
 console.log(html);
 document.getElementById("tableBox").innerHTML = html;
