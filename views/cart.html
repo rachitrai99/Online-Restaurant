@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css01/navbar.css">
+  <link rel="stylesheet" href="css01/up_and_down.css">
+
+  <link rel="stylesheet" href="css01/header.css">
+  <link rel="stylesheet" href="css01/about.css">
+  <link rel="stylesheet" href="css01/banner.css">
+  <link rel="stylesheet" href="css01/cart.css">
+
+  <script src="https://kit.fontawesome.com/fb65f5d132.js" crossorigin="anonymous"></script>
+
+  <title>FOOD VILLA</title>
+</head>
+
+<body>
+
+  <div class="container1">
+    <div class="header1">
+
+      <div class="head1">FOOD VILLA</div>
+    </div>
+  </div>
+  <div class="navigation">
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-button">
+      <i class="fas fa-bars"></i>
+    </label>
+    <div class="logo1">
+      <img src="images/food-villa-2.jpg" alt=""></div>
+    <ul class="navbar1">
+      <li><a href="#home"><i id="show-text" title="HOME" class="fas fa-home"></i><span class="show-icon">HOME</span></a>
+      </li>
+      <li><a href="menu.html"><i id="show-text" title="MENU" class="fas fa-concierge-bell"></i><span
+            class="show-icon">MENU</span></a>
+        <ul class="submenu">
+          <li><a href="menu.html#starter"><i title="STARTER" class="fas fa-pizza-slice"></i>STARTER</a></li>
+          <li><a href="menu.html#drinks"><i title="DRINKS" class="fas fa-glass-martini"></i>DRINKS</a></li>
+          <li><a href="menu.html#main-course"><i title="MAIN-COURSE" class="fas fa-utensils"></i>MAIN-COURSE</a></li>
+          <li><a href="menu.html#desert"><i title="DESERT" class="fas fa-cookie-bite"></i>DESERT</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html"><i id="show-text" title="GALLERY" class="fas fa-camera"></i><span
+            class="show-icon">GALLERY</span></a></li>
+      <li><a href="About.html"><i id="show-text" title="ABOUT" class="fas fa-info-circle"></i><span
+            class="show-icon"></i>ABOUT</span></a></li>
+      <li><a href="#contact"><i id="show-text" title="CONTACT" class="fas fa-address-book"></i><span
+            class="show-icon">CONTACT</span></a></li>
+      <li><a href="welcome"><i id="show-text" title="LOGIN" class="fas fa-user"></i></i><span
+            class="show-icon">LOGIN</span></a></li>
+      <li><a href="reservation.html"><i id="show-text" class="fas fa-book"></i><span
+            class="show-icon">RESERVATION</span></a></li>
+
+      <input type="checkbox" id="chk">
+      <label for="chk" class="hide-button">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+  <br>
+  <div class="all-page-title">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>SPECIAL MENUE</h1>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- menu -->
+
+  <h1 class="subMenuName">STARTER</h1>
+  <hr>
+
+  <div class="subMenu">
+
+    <div class="dish" id="paneerTikka">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/paneerTikka.jpg);"> </div>
+
+      <div class="vegNonveg" id="VegNonveg"><img
+
+          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">PANEER TIKKA</h2>
+
+        <P>It will come with 4 pieces of paneer and 5 pieces of each vegetable.<br><b>Price: </b><b>100</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="paneerTikka" name="100">-</button>
+
+          <div id="paneerTikkaCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="paneerTikka" name="100">+</button>
+
+        </div>
+
+        <button class="addToCart" value="paneerTikka" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="paneerTikkaAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="sweetPotatoTikki">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/sweetPotatoTikki.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img
+
+          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">SWEET POTATO TIKKI</h2>
+
+        <P>It will come with 5 pieces of perfectly cooked sweet potato tikki. <br><b>Price: </b><b>100</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="sweetPotatoTikki" name="100">-</button>
+
+          <div id="sweetPotatoTikkiCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="sweetPotatoTikki" name="100">+</button>
+
+        </div>
+
+        <button class="addToCart" value="sweetPotatoTikki" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="sweetPotatoTikkiAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+    <div class="dish" id="paneerTikka">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/paneerTikka.jpg);"> </div>
+
+      <div class="vegNonveg" id="VegNonveg"><img
+
+          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">PANEER TIKKA</h2>
+
+        <P>It will come with 4 pieces of paneer and 5 pieces of each vegetable.<br><b>Price: </b><b>100</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="paneerTikka" name="100">-</button>
+
+          <div id="paneerTikkaCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="paneerTikka" name="100">+</button>
+
+        </div>
+
+        <button class="addToCart" value="paneerTikka" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="paneerTikkaAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="sweetPotatoTikki">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/sweetPotatoTikki.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img
+
+          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">SWEET POTATO TIKKI</h2>
+
+        <P>It will come with 5 pieces of perfectly cooked sweet potato tikki. <br><b>Price: </b><b>100</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="sweetPotatoTikki" name="100">-</button>
+
+          <div id="sweetPotatoTikkiCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="sweetPotatoTikki" name="100">+</button>
+
+        </div>
+
+        <button class="addToCart" value="sweetPotatoTikki" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="sweetPotatoTikkiAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+ 
+    <div class="dish" id="paneerTikka">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/paneerTikka.jpg);"> </div>
+
+      <div class="vegNonveg" id="VegNonveg"><img
+
+          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">PANEER TIKKA</h2>
+
+        <P>It will come with 4 pieces of paneer and 5 pieces of each vegetable.<br><b>Price: </b><b>100</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="paneerTikka" name="100">-</button>
+
+          <div id="paneerTikkaCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="paneerTikka" name="100">+</button>
+
+        </div>
+
+        <button class="addToCart" value="paneerTikka" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="paneerTikkaAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="sweetPotatoTikki">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/sweetPotatoTikki.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img
+
+          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">SWEET POTATO TIKKI</h2>
+
+        <P>It will come with 5 pieces of perfectly cooked sweet potato tikki. <br><b>Price: </b><b>100</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="sweetPotatoTikki" name="100">-</button>
+
+          <div id="sweetPotatoTikkiCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="sweetPotatoTikki" name="100">+</button>
+
+        </div>
+
+        <button class="addToCart" value="sweetPotatoTikki" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="sweetPotatoTikkiAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+    
+  </div>
+
+  <!-- cart -->
+
+  <h1 class="subMenuName">CART</h1>
+
+  <hr>
+
+  <p id="emptyCart" style="margin: 0px auto;text-align: center; padding-top: 20px;"><b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b></p>
+
+
+  <div class="subMenu" id="cart1">
+
+    <br><br>
+
+  </div>
+
+  <p class="totalAmount" id="totalAmount"></p>
+  <button id="checkOut" onclick="checkOut()">Checkout</button>
+
+
+
+
+
+
+  <!-- FOOTER SECTION:  -->
+  <footer>
+    <div class="upper" id="contact">
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fa fa-volume-control-phone"></i>
+          <div class="overflow-hidden">
+            <h4>Phone</h4>
+            <p class="lead">
+              +01 123-456-4590
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-envelope"></i>
+          <div class="overflow-hidden">
+            <h4>Email</h4>
+            <p class="lead">
+              yourmail@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-map-marker"></i>
+          <div class="overflow-hidden">
+            <h4>Location</h4>
+            <p class="lead">
+              800, Lorem Street, US
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lower">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h3>About Us</h3>
+          <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna.
+            Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla
+            cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Opening hours</h3>
+          <p><span class="text-color">Mon-Tue : </span>9:00 AM - 11:00 PM</p>
+          <p><span class="text-color">Wed-Thu :</span> 9:00 AM - 11:00 PM</p>
+          <p><span class="text-color">Fri-Sat :</span> 9:00 AM - 11:00 PM</p>
+          <p><span class="text-color"> Sunday :</span> 11:00 AM - 11:00 PM</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Contact information</h3>
+          <p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+          <p class="lead"><a href="#">+91 000000000</a></p>
+          <p><a href="#"> foodvilla@gmail.com</a></p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Subscribe</h3>
+          <div class="subscribe_form">
+            <form class="subscribe_form">
+              <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+              <button type="submit" class="submit">SUBSCRIBE</button>
+              <div class="clearfix"></div>
+            </form>
+          </div>
+          <ul class="list-inline f-social">
+            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="company-name">All Rights Reserved. &copy; 2020 <a href="#">Food Villa Restaurant</a> <br>
+              Design By : Kshitij Gupta and Rachit Rai
+              <br>
+              <a href="https://github.com/rachitrai99/Online-Restaurant">Github</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    //counter
+
+
+
+    var arrayOfCounter = [];
+
+
+    function dec(e) {
+
+      var itemId = e.target.value;
+
+      var j = 0;
+
+      for (var i = 0; i < arrayOfCounter.length; i++) {
+
+
+        if (arrayOfCounter[i][0] == itemId) {
+
+          j = 1;
+
+          break;
+
+        }
+
+      }
+
+      if (j == 1) {
+
+        var counter = parseInt(document.getElementById(itemId + "CounterValue").innerHTML);
+
+        counter = counter - 1;
+
+        var amount = (counter * parseInt(e.target.name));
+
+
+
+
+
+
+        if (counter == 0) {
+
+
+          arrayOfCounter.splice(i, 1);
+
+
+
+
+
+        } else {
+
+          arrayOfCounter[i] = [itemId, counter, amount];
+
+          console.table(arrayOfCounter);
+
+
+        }
+        document.getElementById(itemId + "CounterValue").innerHTML = counter;
+
+        document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+        if (hold.length != 0) {
+
+          document.getElementById(itemId + "CounterValueCart").innerHTML = counter;
+
+          document.getElementById(itemId + "AmountCart").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+          var totalAmount = 0;
+
+          for (i = 0; i < arrayOfCounter.length; i++) {
+
+            totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+          }
+
+          document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+
+
+        }
+
+      }
+    }
+    function inc(e) {
+
+      e.preventDefault();
+
+      var itemId = e.target.value;
+
+      let j = 0;
+
+      for (var i = 0; i < arrayOfCounter.length; i++) {
+
+
+        if (arrayOfCounter[i][0] == itemId) {
+
+          j = 1;
+
+          break;
+
+        }
+
+      }
+
+      counterName = itemId + "CounterValue";
+
+      var counter = parseInt(document.getElementById(itemId + "CounterValue").innerHTML);
+
+      counter = counter + 1;
+
+      if(counter<10){
+
+      var amount = (counter * parseInt(e.target.name));
+
+
+
+      arrayOfCounter[i] = [itemId, counter, amount];
+
+      console.table(arrayOfCounter);
+
+      //console.table(arrayOfCounter);
+
+      document.getElementById(itemId + "CounterValue").innerHTML = arrayOfCounter[i][1];
+
+      document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+      if (hold.length != 0) {
+
+        document.getElementById(itemId + "CounterValueCart").innerHTML = arrayOfCounter[i][1];
+
+        document.getElementById(itemId + "AmountCart").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+
+        var totalAmount = 0;
+
+        for (i = 0; i < arrayOfCounter.length; i++) {
+
+          totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+        }
+
+        document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+      }
+
+
+      } else {
+
+        alert("Maximum limit for an item is 9. If you still nedd more ,call the restaurant.Thank you.")
+      }
+
+
+    }
+
+    //addToCart
+    var hold = [];
+
+    function addToCart(e) {
+
+
+
+      var itemId = e.target.value;
+
+      var itemIdCart = e.target.value + "Cart";
+
+      let counter = parseInt(document.getElementById(e.target.value + "CounterValue").innerHTML);
+
+      if ((hold.length == 0) && (counter != 0)) {
+
+        let el = document.getElementById("emptyCart");
+
+
+        el.innerHTML = "";
+
+        document.getElementById("checkOut").style.display = "flex";
+
+        var totalAmount = 0;
+
+        for (i = 0; i < arrayOfCounter.length; i++) {
+
+          totalAmount = totalAmount + (arrayOfCounter[i][2]);
+
+        }
+
+        document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+
+
+      }
+      if (counter == 0) {
+
+
+        for (var i = 0; i < hold.length; i++) {
+
+          if (hold[i] == itemIdCart) {
+
+            break;
+
+          }
+
+        }
+
+        if (i == hold.length) {
+
+        }
+
+        else {
+
+
+          var el = document.getElementById(itemIdCart);
+
+
+          el.remove();
+
+          hold.splice(i, 1);
+
+          if (hold.length == 0) {
+
+            let el = document.getElementById("emptyCart");
+
+
+            el.innerHTML = '<b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b>';
+
+            document.getElementById("checkOut").style.display = "none";
+
+            document.getElementById("totalAmount").innerHTML = "";
+
+
+          }
+
+        }
+
+      } else {
+
+        var addToCart = e.target.parentNode.parentNode;
+
+        let j = 0;
+
+        for (let i = 0; i < hold.length; i++) {
+
+          if (hold[i] == itemIdCart) {
+
+            j = 1;
+
+            break;
+          }
+
+
+        }
+
+        var totalAmount = 0;
+
+        for (i = 0; i < arrayOfCounter.length; i++) {
+
+          totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+        }
+
+        document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+        var item = addToCart.cloneNode(true);
+
+
+
+        item.id = itemIdCart;
+
+        item.childNodes[7].childNodes[1].childNodes[3].id = e.target.value + "CounterValueCart";
+
+        item.childNodes[9].id = e.target.value + "AmountCart";
+
+        var drop = item.childNodes[7].childNodes[3];
+
+        drop.remove();
+
+        var iDiv = document.createElement('button');
+
+        iDiv.className = 'addToCart';
+
+        iDiv.id = e.target.value + "AddToCart";
+
+        iDiv.innerHTML = "Delete";
+
+        iDiv.value = itemIdCart;
+
+        iDiv.addEventListener("click", function (e) {
+
+          var el = document.getElementById(itemIdCart);
+
+          el.remove();
+
+          document.getElementById(itemId + "CounterValue").innerHTML = 0;
+
+          document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs 0";
+
+          //console.log(hold);
+
+
+
+          for (i = 0; i < arrayOfCounter.length; i++) {
+
+
+            if (arrayOfCounter[i][0] == itemId) {
+
+              arrayOfCounter.splice(i, 1);
+
+              break;
+
+            }
+          }
+
+          var totalAmount = 0;
+
+          for (i = 0; i < arrayOfCounter.length; i++) {
+
+            totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+          }
+
+          document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
+
+          for (i = 0; i < hold.length; i++) {
+
+            if (hold[i] == e.target.value) {
+
+
+              hold.splice(i, 1);
+
+              if (hold.length == 0) {
+
+                let check = document.getElementById("emptyCart");
+
+
+                check.innerHTML = '<b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b>';
+
+                document.getElementById("checkOut").style.display = "none";
+
+                document.getElementById("totalAmount").innerHTML = "";
+
+              }
+
+              break;
+
+            }
+
+          }
+
+          //console.table(arrayOfCounter);
+
+          //console.log(hold);
+
+
+        });
+
+        item.childNodes[7].appendChild(iDiv);
+
+
+
+
+        if (j == 1) {
+
+          document.getElementById(itemIdCart).replaceWith(item);
+
+        } else {
+
+          hold.push(itemIdCart);
+
+        }
+
+        document.getElementById("cart1").appendChild(item);
+
+
+      }
+
+    }
+
+    function checkOut() {
+
+      //sessionStorage.setItem('myArray', arrayOfCounter);
+      
+      window.sessionStorage.setItem("items", JSON.stringify(arrayOfCounter));
+
+
+      window.location.href = "checkOut.html";
+
+
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>
