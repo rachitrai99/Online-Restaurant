@@ -77,13 +77,16 @@ router.post('/register', (req, res) => {
 });
 
 // Login
+// router.use(express.static('views'));
+
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', {
     successRedirect: '/dashboard',
     failureRedirect: '/users/login',
     failureFlash: true
   })(req, res, next);
-});
+});   
+
 
 // Logout
 router.get('/logout', (req, res) => {
