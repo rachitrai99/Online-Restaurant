@@ -16,9 +16,33 @@
   <br>
 <div >
 
+  <div class="checkBox">
+    <div id="tableBox"></div>
+</div>
+
 <!-- <p class="lead mb-3">Welcome <%= user.name %></p> -->
 <h2 class="col-md-6" style="padding-left: 10px;">Welcome <%= user.name %></h2>
 <br> <br>
 
 <a href="/users/logout" class="btn btn-secondary">Logout</a>
 
+<script>
+
+var rows =JSON.parse(sessionStorage.getItem("items"));
+console.log(rows);
+
+var html = "<p>";
+for (var i = 0; i < rows.length; i++) {
+    html+="<p>";
+    html+="  "+rows[i][0]+"  ";
+    html+="  "+rows[i][1]+"  ";
+    html+="  "+rows[i][2]+"  ";
+    
+    html+="</p>";
+
+}
+html+="</p>";
+
+console.log(html);
+document.getElementById("tableBox").innerHTML = html;
+</script>
