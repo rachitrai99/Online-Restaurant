@@ -27,17 +27,25 @@ router.get('/cart',forwardAuthenticated,function(req,res){
 }); 
 
 
-/*
-router.get('/menu',forwardAuthenticated,function(req,res){
-  res.sendFile(path.join(__dirname,'views','/menu.html'));
+router.get('/checkOut',forwardAuthenticated,function(req,res){
+  res.sendFile(path.join(__dirname,'views','/checkOut.html'));
   //__dirname : It will resolve to your project folder.s
-});  */  
+});  
 
 // Dashboard
+
 router.get('/dashboard', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
     user: req.user
   })
 );
+
+
+// router.get('/checkOut', ensureAuthenticated, (req, res) =>
+//   res.render('checkOut', {
+//     user: req.user
+//   })
+// );
+
 
 module.exports = router;

@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "connect-ensure-login": "^0.1.1",
     "connect-flash": "^0.1.1",
     "ejs": "^2.7.4",
     "express": "^4.17.1",
