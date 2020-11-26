@@ -42,10 +42,10 @@
       <li><a href="menu.html"><i id="show-text" title="MENU" class="fas fa-concierge-bell"></i><span
             class="show-icon">MENU</span></a>
         <ul class="submenu">
-          <li><a href="menu.html#starter"><i title="STARTER" class="fas fa-pizza-slice"></i>STARTER</a></li>
-          <li><a href="menu.html#drinks"><i title="DRINKS" class="fas fa-glass-martini"></i>DRINKS</a></li>
-          <li><a href="menu.html#main-course"><i title="MAIN-COURSE" class="fas fa-utensils"></i>MAIN-COURSE</a></li>
-          <li><a href="menu.html#desert"><i title="DESERT" class="fas fa-cookie-bite"></i>DESERT</a></li>
+          <li><a href="#starter"><i title="STARTER" class="fas fa-pizza-slice"></i>STARTER</a></li>
+          <li><a href="#drinks"><i title="DRINKS" class="fas fa-glass-martini"></i>DRINKS</a></li>
+          <li><a href="#main-course"><i title="MAIN-COURSE" class="fas fa-utensils"></i>MAIN-COURSE</a></li>
+          <li><a href="#desert"><i title="DESERT" class="fas fa-cookie-bite"></i>DESERT</a></li>
         </ul>
       </li>
       <li><a href="gallery.html"><i id="show-text" title="GALLERY" class="fas fa-camera"></i><span
@@ -77,7 +77,9 @@
 
   <!-- menu -->
 
-  <h1 class="subMenuName">STARTER</h1>
+  <h1 class="subMenuName">STARTER <i title="STARTER" class="fas fa-pizza-slice"
+      style="padding-left: 10px;padding-top: 5px"></i> <a href="#goToCart"><i class="fas fa-shopping-cart"
+        style="position: absolute;right: 20px;font-size: 40px;color: black;bottom: 15px;"></i></a></h1>
   <hr>
 
   <div class="subMenu">
@@ -86,92 +88,8 @@
 
       <div class="dishImage" id="" style="background-image: url(/images/menu/starters/paneerTikka.jpg);"> </div>
 
-      <div class="vegNonveg" id="VegNonveg"><img
-
-          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
-
-      </div>
-
-      <div class="dishDescription" id="">
-
-        <h2 style="margin: 0px;">PANEER TIKKA</h2>
-
-        <P>It will come with 4 pieces of paneer and 5 pieces of each vegetable.<br><b>Price: </b><b>100</b> </P>
-
-      </div>
-
-      <div class="addToCartDiv">
-
-        <div class="counter">
-
-          <button id="dec" onclick="dec(event)" value="paneerTikka" name="100">-</button>
-
-          <div id="paneerTikkaCounterValue" class="counterValue">0</div>
-
-          <button id="inc" onclick="inc(event)" value="paneerTikka" name="100">+</button>
-
-        </div>
-
-        <button class="addToCart" value="paneerTikka" onclick="addToCart(event)">Add to cart</button>
-
-      </div>
-
-      <div class="amount" id="paneerTikkaAmount">
-
-        Amount: Rs 0
-
-      </div>
-
-    </div>
-
-    <div class="dish" id="sweetPotatoTikki">
-
-      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/sweetPotatoTikki.jpg);"></div>
-
-      <div class="vegNonveg" id=""><img
-
-          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
-
-      </div>
-
-      <div class="dishDescription" id="">
-
-        <h2 style="margin: 0px;">SWEET POTATO TIKKI</h2>
-
-        <P>It will come with 5 pieces of perfectly cooked sweet potato tikki. <br><b>Price: </b><b>100</b> </P>
-
-      </div>
-
-      <div class="addToCartDiv">
-
-        <div class="counter">
-
-          <button id="dec" onclick="dec(event)" value="sweetPotatoTikki" name="100">-</button>
-
-          <div id="sweetPotatoTikkiCounterValue" class="counterValue">0</div>
-
-          <button id="inc" onclick="inc(event)" value="sweetPotatoTikki" name="100">+</button>
-
-        </div>
-
-        <button class="addToCart" value="sweetPotatoTikki" onclick="addToCart(event)">Add to cart</button>
-
-      </div>
-
-      <div class="amount" id="sweetPotatoTikkiAmount">
-
-        Amount: Rs 0
-
-      </div>
-
-    </div>
-    <div class="dish" id="paneerTikka">
-
-      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/paneerTikka.jpg);"> </div>
-
-      <div class="vegNonveg" id="VegNonveg"><img
-
-          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+      <div class="vegNonveg" id="VegNonveg"><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png"
+          alt="">
 
       </div>
 
@@ -207,13 +125,14 @@
 
     </div>
 
+
+
+
     <div class="dish" id="sweetPotatoTikki">
 
       <div class="dishImage" id="" style="background-image: url(/images/menu/starters/sweetPotatoTikki.jpg);"></div>
 
-      <div class="vegNonveg" id=""><img
-
-          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
 
       </div>
 
@@ -248,22 +167,22 @@
       </div>
 
     </div>
- 
-    <div class="dish" id="paneerTikka">
 
-      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/paneerTikka.jpg);"> </div>
 
-      <div class="vegNonveg" id="VegNonveg"><img
 
-          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+    <div class="dish" id="momo">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/momos.jpg);"> </div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
 
       </div>
 
       <div class="dishDescription" id="">
 
-        <h2 style="margin: 0px;">PANEER TIKKA</h2>
+        <h2 style="margin: 0px;">MOMOS</h2>
 
-        <P>It will come with 4 pieces of paneer and 5 pieces of each vegetable.<br><b>Price: </b><b>100</b> </P>
+        <P>It will come with 6 pieces of steamed momos and red hot chutney.<br><b>Price: </b><b>60</b> </P>
 
       </div>
 
@@ -271,19 +190,19 @@
 
         <div class="counter">
 
-          <button id="dec" onclick="dec(event)" value="paneerTikka" name="100">-</button>
+          <button id="dec" onclick="dec(event)" value="momo" name="60">-</button>
 
-          <div id="paneerTikkaCounterValue" class="counterValue">0</div>
+          <div id="momoCounterValue" class="counterValue">0</div>
 
-          <button id="inc" onclick="inc(event)" value="paneerTikka" name="100">+</button>
+          <button id="inc" onclick="inc(event)" value="momo" name="60">+</button>
 
         </div>
 
-        <button class="addToCart" value="paneerTikka" onclick="addToCart(event)">Add to cart</button>
+        <button class="addToCart" value="momo" onclick="addToCart(event)">Add to cart</button>
 
       </div>
 
-      <div class="amount" id="paneerTikkaAmount">
+      <div class="amount" id="momoAmount">
 
         Amount: Rs 0
 
@@ -291,21 +210,21 @@
 
     </div>
 
-    <div class="dish" id="sweetPotatoTikki">
 
-      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/sweetPotatoTikki.jpg);"></div>
 
-      <div class="vegNonveg" id=""><img
+    <div class="dish" id="springRoll">
 
-          src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/springRoll.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
 
       </div>
 
       <div class="dishDescription" id="">
 
-        <h2 style="margin: 0px;">SWEET POTATO TIKKI</h2>
+        <h2 style="margin: 0px;">SPRING ROLL</h2>
 
-        <P>It will come with 5 pieces of perfectly cooked sweet potato tikki. <br><b>Price: </b><b>100</b> </P>
+        <P>It will come with 12 pieces of crispy veg spring rolls. <br><b>Price: </b><b>70</b> </P>
 
       </div>
 
@@ -313,35 +232,902 @@
 
         <div class="counter">
 
-          <button id="dec" onclick="dec(event)" value="sweetPotatoTikki" name="100">-</button>
+          <button id="dec" onclick="dec(event)" value="springRoll" name="70">-</button>
 
-          <div id="sweetPotatoTikkiCounterValue" class="counterValue">0</div>
+          <div id="springRollCounterValue" class="counterValue">0</div>
 
-          <button id="inc" onclick="inc(event)" value="sweetPotatoTikki" name="100">+</button>
+          <button id="inc" onclick="inc(event)" value="springRoll" name="70">+</button>
 
         </div>
 
-        <button class="addToCart" value="sweetPotatoTikki" onclick="addToCart(event)">Add to cart</button>
+        <button class="addToCart" value="springRoll" onclick="addToCart(event)">Add to cart</button>
 
       </div>
 
-      <div class="amount" id="sweetPotatoTikkiAmount">
+      <div class="amount" id="springRollAmount">
 
         Amount: Rs 0
 
       </div>
 
     </div>
-    
+
+
+
+    <div class="dish" id="tomatoSoup">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/tomatoSoup.jpg);"> </div>
+
+      <div class="vegNonveg" id="V"><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">TOMATO SOUP</h2>
+
+        <P>Creamy soup made with fresh tomates<br>Qty:400ml<br><b>Price: </b><b>120</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="tomatoSoup" name="120">-</button>
+
+          <div id="tomatoSoupCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="tomatoSoup" name="120">+</button>
+
+        </div>
+
+        <button class="addToCart" value="tomatoSoup" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="tomatoSoupAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="vegSoup">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/starters/vegetableSoup.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">VEGETABLE SOUP</h2>
+
+        <P>Creamy soup made with fresh vegetables.<br>Qty:400ml <br><b>Price: </b><b>120</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="vegetableSoup" name="120">-</button>
+
+          <div id="vegetableSoupCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="vegetableSoup" name="120">+</button>
+
+        </div>
+
+        <button class="addToCart" value="vegetableSoup" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="vegetableSoupAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
   </div>
 
-  <!-- cart -->
 
-  <h1 class="subMenuName">CART</h1>
+
+  <!--drinks-->
+
+  <h1 class="subMenuName">DRINKS<i title="DRINKS" class="fas fa-glass-martini"
+      style="padding-left: 10px;padding-top: 5px"></i> <a href="#goToCart"><i class="fas fa-shopping-cart"
+        style="position: absolute;right: 20px;font-size: 40px;color: black;bottom: 15px;"></i></a></h1>
 
   <hr>
 
-  <p id="emptyCart" style="margin: 0px auto;text-align: center; padding-top: 20px;"><b style="font-size: 50px;"> The Cart is Empty. GO SHOP!!!!</b></p>
+  <div class="subMenu">
+
+    <div class="dish" id="cappuccino">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/cappuccino.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">CAPPUCCINO</h2>
+
+        <P>A coffee drink consisting of espresso and a milk foam mixture.<br>Qty:240ml <br><b>Price: </b><b>120</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="cappuccino" name="120">-</button>
+
+          <div id="cappuccinoCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="cappuccino" name="120">+</button>
+
+        </div>
+
+        <button class="addToCart" value="cappuccino" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="cappuccinoAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="freakShake">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/freakShake.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">FREAK SHAKE</h2>
+
+        <P>Coffee Freakshakes are often made with cold brew coffee.<br>Qty:400ml <br><b>Price: </b><b>150</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="freakShake" name="150">-</button>
+
+          <div id="freakShakeCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="freakShake" name="150">+</button>
+
+        </div>
+
+        <button class="addToCart" value="freakShake" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="freakShakeAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="espresso">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/espresso.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">ESPRESSO</h2>
+
+        <P>A short, strong drink.<br>Qty:40ml <br><b>Price: </b><b>40</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="fespresso" name="40">-</button>
+
+          <div id="espressoCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="espresso" name="40">+</button>
+
+        </div>
+
+        <button class="addToCart" value="espresso" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="espressoAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="icedLatte">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/icelatte.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">ICED LATTE</h2>
+
+        <P>Coffee Freakshakes are often made with cold brew coffee.<br>Qty:400ml <br><b>Price: </b><b>150</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="icedLatte" name="150">-</button>
+
+          <div id="icedLatteCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="icedLatte" name="150">+</button>
+
+        </div>
+
+        <button class="addToCart" value="icedLatte" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="icedLatteAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="chai">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/chai.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">CHAI</h2>
+
+        <P>1 cup is never enough.<br>Qty:200ml <br><b>Price: </b><b>40</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="chai" name="40">-</button>
+
+          <div id="chaiCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="chai" name="40">+</button>
+
+        </div>
+
+        <button class="addToCart" value="chai" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="chaiAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+    <div class="dish" id="bisleri">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/drinks/bisleri.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">ICED LATTE</h2>
+
+        <P>Water bottle.<br>Qty:500ml <br><b>Price: </b><b>20</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="bisleri" name="20">-</button>
+
+          <div id="bisleriCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="bisleri" name="20">+</button>
+
+        </div>
+
+        <button class="addToCart" value="bisleri" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="bisleriAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--MAIN-COURSE-->
+
+  <h1 class="subMenuName">MAIN-COURSE<i title="MAIN-COURSE" class="fas fa-utensils"
+      style="padding-left: 10px;padding-top: 5px"></i> <a href="#goToCart"><i class="fas fa-shopping-cart"
+        style="position: absolute;right: 20px;font-size: 40px;color: black;bottom: 15px;"></i></a></h1>
+
+  <hr>
+
+  <div class="subMenu">
+
+    <div class="dish" id="burger">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/burger.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">BURGER</h2>
+
+        <P>Best burger in town that i can promise.Comes with fries. <br><b>Price: </b><b>120</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="burger" name="120">-</button>
+
+          <div id="burgerCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="burger" name="120">+</button>
+
+        </div>
+
+        <button class="addToCart" value="burger" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="burgerAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="dish" id="pizza">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/pizza.jfif);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">PIZZA</h2>
+
+        <P>All veggie 9 inch pizza with cheese burst base. <br><b>Price: </b><b>200</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="pizza" name="200">-</button>
+
+          <div id="pizzaCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="pizza" name="200">+</button>
+
+        </div>
+
+        <button class="addToCart" value="pizza" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="pizzaAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="kadaiPaneer">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/kadaiPaneer.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">KADAI PANEER</h2>
+
+        <P>Grilled paneer inroasted vegetables gravy. <br><b>Price: </b><b>240</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="kadaiPaneer" name="240">-</button>
+
+          <div id="kadaiPaneerCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="kadaiPaneer" name="240">+</button>
+
+        </div>
+
+        <button class="addToCart" value="kadaiPaneer" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="kadaiPaneerAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="butterMasala">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/butterMasala.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">PANEER BUTTER MASALA</h2>
+
+        <P>All cooked in butter ,so delicious. <br><b>Price: </b><b>220</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="butterMasala" name="220">-</button>
+
+          <div id="butterMasalaCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="butterMasala" name="220">+</button>
+
+        </div>
+
+        <button class="addToCart" value="butterMasala" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="butterMasalaAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="mixVeg">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/mixVeg.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">MIX VEG</h2>
+
+        <P>Fresh veggetables from farm are cooked precisely. <br><b>Price: </b><b>120</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="mixVeg" name="120">-</button>
+
+          <div id="mixVegCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="mixVeg" name="120">+</button>
+
+        </div>
+
+        <button class="addToCart" value="mixVeg" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="mixVegAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="naan">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/naan.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">NAAN</h2>
+
+        <P>Cooked so well. <br><b>Price: </b><b>8</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="naan" name="8">-</button>
+
+          <div id="naanCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="naan" name="8">+</button>
+
+        </div>
+
+        <button class="addToCart" value="naan" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="naanAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="butterNaan">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/butterNaan.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">BUTTER NAAN</h2>
+
+        <P>4 pieces of a naan <br><b>Price: </b><b>20</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="butterNaan" name="20">-</button>
+
+          <div id="butterNaanCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="butterNaan" name="20">+</button>
+
+        </div>
+
+        <button class="addToCart" value="butterNaan" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="butterNaanAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="vegBiriyani">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/VegBiriyani.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">VEG BIRIYANI</h2>
+
+        <P>Biriyani with vegetables lol. <br><b>Price: </b><b>80</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="vegBiriyani" name="80">-</button>
+
+          <div id="vegBiriyaniCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="vegBiriyani" name="80">+</button>
+
+        </div>
+
+        <button class="addToCart" value="vegBiriyani" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="vegBiriyaniAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+
+    <div class="dish" id="dosa">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/main-course/dosa.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">DOSA</h2>
+
+        <P>Dosa with a surprise. <br><b>Price: </b><b>150</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="dosa" name="150">-</button>
+
+          <div id="dosaCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="dosa" name="150">+</button>
+
+        </div>
+
+        <button class="addToCart" value="dosa" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="dosaAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+  <!--DESERT-->
+
+  <h1 class="subMenuName">DESERT<i title="DESERT" class="fas fa-cookie-bite"
+      style="padding-left: 10px;padding-top: 5px"></i> <a href="#goToCart"><i class="fas fa-shopping-cart"
+        style="position: absolute;right: 20px;font-size: 40px;color: black;bottom: 15px;"></i></a></h1>
+
+  <hr>
+
+  <div class="subMenu">
+
+
+    <div class="dish" id="blackForest">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/deserts/blackForestCake.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">BLACK fOREST CAKE</h2>
+
+        <P>A treat for your mouth.<br><b>Price: </b><b>80</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="blackForest" name="80">-</button>
+
+          <div id="blackForestCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="blackForest" name="80">+</button>
+
+        </div>
+
+        <button class="addToCart" value="blackForest" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="blackForestAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="pineappleCake">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/deserts/pineapplePastry.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">PINEAPPLE CAKE</h2>
+
+        <P>Filled with richness of pineapple.<br><b>Price: </b><b>60</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="pineappleCake" name="60">-</button>
+
+          <div id="pineappleCakeCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="pineappleCake" name="60">+</button>
+
+        </div>
+
+        <button class="addToCart" value="pineappleCake" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="pineappleCakeAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+    <div class="dish" id="chocoLavaCake">
+
+      <div class="dishImage" id="" style="background-image: url(/images/menu/deserts/chocoLava.jpg);"></div>
+
+      <div class="vegNonveg" id=""><img src="/images/dice-square-with-a-dot-or-button-with-a-circle-inside.png" alt="">
+
+      </div>
+
+      <div class="dishDescription" id="">
+
+        <h2 style="margin: 0px;">CHOCO LAVA CAKE</h2>
+
+        <P>Atreat for your tongue.<br><b>Price: </b><b>100</b> </P>
+
+      </div>
+
+      <div class="addToCartDiv">
+
+        <div class="counter">
+
+          <button id="dec" onclick="dec(event)" value="chocoLavaCake" name="100">-</button>
+
+          <div id="chocoLavaCakeCounterValue" class="counterValue">0</div>
+
+          <button id="inc" onclick="inc(event)" value="chocoLavaCake" name="100">+</button>
+
+        </div>
+
+        <button class="addToCart" value="chocoLavaCake" onclick="addToCart(event)">Add to cart</button>
+
+      </div>
+
+      <div class="amount" id="chocoLavaCakeAmount">
+
+        Amount: Rs 0
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- cart -->
+
+  <h1 class="subMenuName" id="goToCart">CART<i class="fas fa-shopping-cart"
+      style="padding-left: 10px;padding-top: 5px"></i></h1>
+
+  <hr>
+
+  <p id="emptyCart" style="margin: 0px auto;text-align: center; padding-top: 45px;"><b style="font-size: 50px;"> The
+      Cart is Empty. GO SHOP!!!!</b></p>
 
 
   <div class="subMenu" id="cart1">
@@ -351,6 +1137,7 @@
   </div>
 
   <p class="totalAmount" id="totalAmount"></p>
+
   <button id="checkOut" onclick="checkOut()">Checkout</button>
 
 
@@ -361,7 +1148,7 @@
   <!-- FOOTER SECTION:  -->
   <footer>
     <div class="upper" id="contact">
-      <div class="row">
+      <div class="row" style="margin-right: 0px;">
         <div class="col-md-4">
           <i class="fa fa-volume-control-phone"></i>
           <div class="overflow-hidden">
@@ -417,7 +1204,22 @@
           <div class="subscribe_form">
             <form class="subscribe_form">
               <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
-              <button type="submit" class="submit">SUBSCRIBE</button>
+              <button type="submit" class="submit" style="background-color: #d0a772;
+              color: #fff;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 50px;
+              display: inline-block;
+              padding: 0 10px;
+              margin: 0px;
+              /* float: left; */
+              width: 300px;
+              height:70px;
+              border: none;
+              width: 100%;
+              cursor: pointer;
+              transition: all 0.5s ease-in-out;
+          ">SUBSCRIBE</button>
               <div class="clearfix"></div>
             </form>
           </div>
@@ -557,39 +1359,39 @@
 
       counter = counter + 1;
 
-      if(counter<10){
+      if (counter < 10) {
 
-      var amount = (counter * parseInt(e.target.name));
+        var amount = (counter * parseInt(e.target.name));
 
 
 
-      arrayOfCounter[i] = [itemId, counter, amount];
+        arrayOfCounter[i] = [itemId, counter, amount];
 
-      console.table(arrayOfCounter);
+        console.table(arrayOfCounter);
 
-      //console.table(arrayOfCounter);
+        //console.table(arrayOfCounter);
 
-      document.getElementById(itemId + "CounterValue").innerHTML = arrayOfCounter[i][1];
+        document.getElementById(itemId + "CounterValue").innerHTML = arrayOfCounter[i][1];
 
-      document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+        document.getElementById(itemId + "Amount").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
 
-      if (hold.length != 0) {
+        if (hold.length != 0) {
 
-        document.getElementById(itemId + "CounterValueCart").innerHTML = arrayOfCounter[i][1];
+          document.getElementById(itemId + "CounterValueCart").innerHTML = arrayOfCounter[i][1];
 
-        document.getElementById(itemId + "AmountCart").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
+          document.getElementById(itemId + "AmountCart").innerHTML = "Amount: Rs " + (counter * parseInt(e.target.name));
 
-        var totalAmount = 0;
+          var totalAmount = 0;
 
-        for (i = 0; i < arrayOfCounter.length; i++) {
+          for (i = 0; i < arrayOfCounter.length; i++) {
 
-          totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+            totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+          }
+
+          document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
 
         }
-
-        document.getElementById("totalAmount").innerHTML = "Total Amount: " + totalAmount;
-
-      }
 
 
       } else {
@@ -824,11 +1626,30 @@
     function checkOut() {
 
       //sessionStorage.setItem('myArray', arrayOfCounter);
+
+      var totalAmount = 0;
+
+      for (i = 0; i < arrayOfCounter.length; i++) {
+
+        totalAmount = totalAmount + parseInt(arrayOfCounter[i][2]);
+
+      }
+
+      if (totalAmount == 0) {
+
+        alert("Please add some item. Thank you!");
+
       
-      window.sessionStorage.setItem("items", JSON.stringify(arrayOfCounter));
 
 
-      window.location.href = "checkOut.html";
+      } else {
+
+        window.sessionStorage.setItem("items", JSON.stringify(arrayOfCounter));
+
+
+        window.location.href = "checkOut.html";
+
+      }
 
 
     }
