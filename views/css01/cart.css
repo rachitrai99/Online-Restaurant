@@ -133,7 +133,7 @@ img{
   }
 
 .checkBox{
-    width: 600px;
+    width: 600PX;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
@@ -336,9 +336,9 @@ textarea{
       }
     
     .checkBox{
-        width: 600px;
+        width: 300PX;
         background-color: white;
-        padding: 40px;
+        padding: 20px;
         border-radius: 10px;
         margin: 10px auto;
         
@@ -364,6 +364,18 @@ textarea{
     #emptyCart{
         margin: 0px auto;text-align: center; padding-top: 20px;
     }
+    input{
+        height: 30px;
+        width: 250px;
+        padding: 5px;
+        font-size: 20px;
+    }
     
+    textarea{
+        width: 250px;
+        height: 200px;
+        font-size: 20px;
+        padding: 5px;
+    }
 
 }
