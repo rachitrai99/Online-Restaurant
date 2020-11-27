@@ -27,16 +27,36 @@
 <a href="cart.html" class="btn btn-outline-secondary btn-lg">Logout</a>
 
 <div class="checkBox">
-    <div class="tableBox" id="tableBox"></div>
+    <div class="tableBox" id="tableBox"><p > <h2>List of items ordered</h2></p><hr style="
+        width: 100%;
+        position: static;
+        top: 0px;
+    border-width: 3px;
+    border-color: black;
+    margin: 0px;"></div>
+    <hr style="width: 100%;
+    position: static;
+    top: 0px;
+border-width: 3px;
+border-color: black;
+margin: 0px;">
+    <p style='font-size: 30px;    font-family: "News Cycle","Arial Narrow Bold",sans-serif;'><b>Total Amount:-</b> Rs<span id="amt"></span></p>
 </div>
+<div class="checkBox">
+<form action="" id="placeOrderForm" >
 
-<label for="contact">Enter your contact number</label>
-<input type="text" id="contact" value="" placeholder="e.g.8923213717">
+<label for="contact">1.Enter your number :-</label>
+<input type="text" id="contact" name="contact" value="" pattern="[0-9]*10" placeholder="e.g.8923213717">
 
-<label for="address">Enter your address</label>
-<input type="text" id="address" value=""  placeholder="e.g.Thakur dwara senthal (bareilly)">
+<label for="address">2.Enter your address :-</label>
+<input type="text" id="address" name="address" value=""  placeholder="e.g.Thakur dwara senthal (bareilly)">
 
-<button id="placeOrder"  style="width: 200px;height: 50px;">Place Order</button>
+<label for="instruction">3.Instructions :- </label>
+<textarea id="instruction" name="instruction" value=""  placeholder="Any additional Instructions for chef or delievery boy."></textarea>
+
+<button id="placeOrder"  style="width: 200px;height: 50px;padding-left: 0px; margin-left: 0px;">Place Order</button>
+
+</form></div>
 <br>
 <br>
 <h1 id="confirm" style="display: none;">Your order has been successfully placed.We will deliver it soon.</h1>
@@ -54,9 +74,9 @@
 
         console.log(rows);
 
-        var html = '<p > <h2>List of items ordered</h2><ul style = "list-style-type :none;">' ;
+        var html = '<ul style = "list-style-type :none;">' ;
         for (var i = 0; i < rows.length; i++) {
-            html += '<li style = "list-style-type :none;word-spacing:25px; font-size:25px">' + (i+1);
+            html += '<li style = "list-style-type :none;word-spacing:25px; font-size:25px">' + (i+1) +".";
             html += "  " + rows[i][0] + "  ";
             html += "  " + rows[i][1] + "  ";
             html += "  " + rows[i][2] + "  ";
@@ -64,11 +84,24 @@
             html += "</li>";
 
         }
-        html += "</p>";
+        html += "</ul>";
 
         sessionStorage.clear();
 
-        document.getElementById("tableBox").innerHTML = html;
+        document.getElementById("tableBox").innerHTML = document.getElementById("tableBox").innerHTML + html;
+
+        var total = 0
+
+        for(i=0;i<rows.length;i++) {
+
+            total = total + parseInt(rows[i][2]);
+
+
+        }
+
+        console.log(total);
+
+        document.getElementById("amt").innerHTML = total;
 
         function placeOrder() {
 
@@ -86,6 +119,8 @@
 
         var contact = document.getElementById("contact").value;
         var address = document.getElementById("address").value;
+
+        var inst = document.getElementById("instruction").value;
 
         if (contact == "" && address == "") {
 
@@ -105,7 +140,7 @@
                 From: "uzumki002@gmail.com",
                 Subject: "Name  = "+  document.getElementById("name"),
                 Body:
-                    rows + "     " + contact + "   " + address + "    "
+                    html + "     "+ "instructions = " + inst + " Contact = " + contact + "   Address = " + address + "    "
             }).then((message) => alert(message));
 
 
