@@ -158,6 +158,34 @@ td,th{
     margin: 0px auto;text-align: center; padding-top: 20px;
 }
 
+#placeOrderForm{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px auto;
+}
+
+label{
+
+    font-size: 25px;
+
+
+}
+
+input{
+    height: 30px;
+    width: 500px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+textarea{
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+    padding: 5px;
+}
+
 
 @media (max-width:960px){
 
@@ -182,6 +210,7 @@ td,th{
         border-color: black;
         margin: 0px;
     }
+
     .subMenu{
         width: 100%;
         padding: 15px;
