@@ -1,43 +1,45 @@
-h1.subMenuName{
+h1.subMenuName {
     font-size: 40px;
     color: black;
-    
+  
     top: 70px;
-    background-color: #ECE6E6;
-
+    background-color: #ece6e6;
+  
     display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
     padding: 10px;
-}
-hr{
+    margin-bottom: 0px;
+  }
+  hr {
     width: 100%;
     position: sticky;
     top: 135px;
     border-width: 3px;
     border-color: black;
     margin: 0px;
-}
-.subMenu{
+    padding: 0px;
+  }
+  .subMenu {
     width: 800px;
     padding: 10px;
-
+  
     margin: 10px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-.dish{
+  }
+  .dish {
     display: flex;
     flex-direction: row;
     border-radius: 10px;
-    border: 5px double black ;
+    border: 5px double black;
     padding: 5px 15px;
     margin: 10px;
-}
-.dishImage{
+  }
+  .dishImage {
     display: inline-block;
     width: 110px;
     height: 110px;
@@ -45,43 +47,38 @@ hr{
     border-radius: 10px;
     margin-top: 10px;
     background-size: cover;
-
-}
-
-.vegNonveg{
-    display: inline-block;
-    
-}
-.dishDescription{
-
+  }
+  
+  .vegNonveg {
+    display: none;
+  }
+  .dishDescription {
+      padding-left: 20px;
     display: inline;
     width: 400px;
-    
-}
-
-.counter{
+  }
+  
+  .counter {
     display: inline;
-    
-}
-.vegNonveg{
+  }
+  .vegNonveg {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
-}
-img{
+  }
+  img {
     position: relative;
     top: 0px;
     width: 20px;
     height: 20px;
-}
-.addToCartDiv{
+  }
+  .addToCartDiv {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-}
-.counter{
+  }
+  .counter {
     display: flex;
     flex-direction: row;
   }
@@ -103,279 +100,255 @@ img{
     align-items: center;
     justify-content: center;
   }
-  .addToCart{
-      width: 150px;
-      
+  .addToCart {
+    width: 150px;
   }
-  .amount{
-      padding: 20px;
-      font-size: 25px;
-      font-weight: bold;
-      width: 140px;
-      text-align: center;
-  }
-  #checkOut{
-      width: 350px;
-      height: 60px;
-      font-size: 40px;
-      display: none;
-      margin: 0px auto;
-  }
-  #totalAmount{
-
-    width: 350px;
+  .amount {
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 140px;
     text-align: center;
+  }
+  #checkOut {
+    width: 350px;
     height: 60px;
     font-size: 40px;
+    display: none;
+    margin: 0px auto;
+  }
+  #totalAmount {
+    width:500px;
+    text-align: center;
+    height: 60px;
+    font-size: 30px;
     display: flex;
     margin: 0px auto;
-
+    text-align: center;
   }
-
-.checkBox{
-    width: 600PX;
-    background-color: white;
+  
+  .checkBox {
+    width:800px;
+    background-color:  #d0a772;
     padding: 10px;
     border-radius: 10px;
-    margin: 10px auto;
-    
-}
-
-#tableBox{
-
+    margin: 0px auto;
+  }
+  
+  #tableBox {
     margin: 0 auto;
     border-collapse: collapse;
     width: 100%;
-}
-}
-
-td,th{
-    border-right: 2px solid black;
-    font-size: 100px;
+  }
+  
+  
+  #emptyCart {
+  
+    margin: 0px auto;
     text-align: center;
-}
-#emptyCart{
-    margin: 0px auto;text-align: center; padding-top: 20px;
-}
-
-#placeOrderForm{
+    padding-top: 20px;
+  }
+  
+  #placeOrderForm {
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin: 0px auto;
-}
-
-label{
-
+  }
+  
+  label {
     font-size: 25px;
-
-
-}
-
-input{
-    height: 30px;
-    width: 500px;
-    padding: 5px;
-    font-size: 20px;
-}
-
-textarea{
-    width: 500px;
+  }
+  
+  .input1{
+      height: 30px;
+      width: 100%;
+      padding: 5px;
+      font-size: 20px;
+      border-radius: 4px;
+      outline: none;
+      border: 2px lightgrey solid;
+  }
+  
+  textarea {
+    width: 100%;
     height: 300px;
     font-size: 20px;
     padding: 5px;
-}
-
-
-@media (max-width:960px){
-
-    h1.subMenuName{
-        font-size: 40px;
-        color: black;
-        
-        top: 70px;
-        background-color: #ECE6E6;
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: sticky;
-        padding: 10px;
+    border-radius: 4px;
+      outline: none;
+      border: 2px lightgrey solid;
+  }
+  
+  tr,td{
+    text-align: center;
+  }
+  
+  
+  
+  @media (max-width: 962px) {
+  
+    .subMenu {
+      width: 100%;
+      
+      
     }
-    hr{
+    .dish {
         width: 100%;
-        position: sticky;
-        top: 135px;
-        border-width: 3px;
-        border-color: black;
-        margin: 0px;
+      flex-wrap: wrap;
+      }
+    
+  
+    
+    .dishDescription {
+      display: inline;
+      width: 570px;
     }
-
-    .subMenu{
+    .checkBox{
+      width: 730px;
+    }
+  
+   
+  }
+  
+  @media (max-width: 740px) {
+  
+      .subMenu {
         width: 100%;
-        padding: 15px;
-    
-        margin: 10px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .dish{
-        display: flex;
-        width: 90%;
-        flex-direction: row;
-        border-radius: 10px;
-        border: 5px double black ;
-        padding: 5px 15px;
-        margin: 10px;
-    }
-    .dishImage{
-        display: inline-block;
-        width: 110px;
-        height: 110px;
-        min-width: 80px;
-        max-height: 80px;
-        border: 2px solid black;
-        border-radius: 10px;
-        margin-top: 10px;
-        background-size: cover;
-    
-    }
-    
-    .vegNonveg{
-        display: inline-block;
         
-    }
-    .dishDescription{
+        
+      }
+      .dish {
+          width: 100%;
+        flex-wrap: wrap;
+        }
+      
     
+      
+      .dishDescription {
         display: inline;
-        width: 60%;
-        
-    }
-
-    .dishDescription h2{
-        font-size: 20px;
-        line-height: 25px;
-    }
-    .dishDescription p{
-        line-height: 20px;
-    }
+        width: 450px;
+      }
+  
+      .checkBox{
+        width: 95%;
+       padding: 0px;
+      }
     
-    .counter{
+     
+    }
+    @media (max-width: 620px) {
+  
+      .subMenu {
+        width: 100%;
+        
+        
+      }
+      .dish {
+          width: 100%;
+        flex-wrap: wrap;
+        }
+      
+    
+      
+      .dishDescription {
         display: inline;
-        
-    }
-    .vegNonveg{
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-    }
-    img{
-        position: relative;
-        top: 0px;
-        width: 20px;
-        height: 20px;
-    }
-    .addToCartDiv{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 20%;
-    
-    }
-    .counter{
-        display: flex;
-        flex-direction: row;
+        width: 300px;
       }
-      .counterValue {
-        font-size: 30px;
-        color: black;
-        font-weight: bold;
-      }
-      button {
-        width: 30px;
-        height: 30px;
-        font-size: 20px;
-        background-color: black;
-        color: white;
-        outline: none;
-        margin: 0px 36px;
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .addToCart{
-          width: 150px;
-      }
-      .amount{
-          padding: 20px;
-          font-size: 20px;
-          font-weight: bold;
-          width: 10%;
-          text-align: center;
-      }
-      #checkOut{
-          width: 350px;
-          height: 60px;
-          font-size: 40px;
-          display: none;
-          margin: 0px auto;
-      }
-      #totalAmount{
-    
-        width: 350px;
+      #totalAmount {
+        width: 100%;
         text-align: center;
         height: 60px;
-        font-size: 40px;
+        font-size: 30px;
         display: flex;
         margin: 0px auto;
-    
+        padding-left: 10px;
       }
-    
-    .checkBox{
-        width: 300PX;
-        background-color: white;
-        padding: 20px;
+      
+      .checkBox {
+        width: 95%;
+        padding: 0px;
         border-radius: 10px;
-        margin: 10px auto;
-        
-    }
-    
-    .tableBox{
-    
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .ulist{
-        list-style: none;
-        font-size: 25px;
-    }
-    }
-    
-    td,th{
-        border-right: 2px solid black;
-        font-size: 100px;
-        text-align: center;
-    }
-    #emptyCart{
-        margin: 0px auto;text-align: center; padding-top: 20px;
-    }
-    input{
+        margin-bottom: 10px;
+        margin-top: 0px;
+      }
+      .input1{
         height: 30px;
-        width: 250px;
+        width: 100%;
         padding: 5px;
         font-size: 20px;
     }
     
-    textarea{
-        width: 250px;
-        height: 200px;
-        font-size: 20px;
-        padding: 5px;
+    textarea {
+      width: 100%;
+      height: 300px;
+      font-size: 20px;
+      padding: 5px;
     }
-
-}
+    
+     
+    }
+    @media (max-width: 470px) {
+      h1.subMenuName {
+          font-size: 30px;
+        }
+        hr{
+            top:125px;
+        }
+  
+      .subMenu {
+        width: 100%;
+        
+        
+      }
+      .dish {
+          width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        }
+      
+    
+      
+      .dishDescription {
+        display: inline;
+        width: 100%;
+        padding-top: 10px;
+  
+      }
+  
+      .dishDescription h2{
+          font-size: 27px;
+      }
+  
+      .dishDescription p{
+          margin-bottom: 0px;
+      }
+  
+      button {
+          width: 30px;
+          height: 30px;
+          font-size: 20px;
+          background-color: black;
+          color: white;
+          outline: none;
+          margin: 0px 36px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .addToCart {
+          width: 150px;
+        }
+        .amount {
+          padding: 0px;
+          font-size: 20px;
+          font-weight: bold;
+          width: 100%;
+          text-align: center;
+        }
+        
+    
+     
+    }

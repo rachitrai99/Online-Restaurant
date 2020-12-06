@@ -1,169 +1,173 @@
-.navigation {
-    background-color: black;
-    width: 100%;
-    height: 70px;
-    padding: 0px 20px;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-    color:  #d0a772;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin:10px 0px;
-    display: inline-block;
-    
-  }
+.navigation1 {
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  padding: 0px 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  color:  #d0a772;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:10px 0px;
+  display: inline-block;
+  
+}
 .show-button:hover,
 .hide-button:hover {
-  color: blue;
+color: blue;
 }
 .show-button,
 .hide-button {
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-  line-height: 70px;
-  transition: 0.5s;
-  display: none;
+font-size: 30px;
+font-weight: bold;
+color: white;
+line-height: 70px;
+transition: 0.5s;
+display: none;
 }
 .show-button {
-  float: right;
+float: right;
 }
 #chk {
-  position: absolute;
-  visibility: hidden;
-  z-index: -10;
+position: absolute;
+visibility: hidden;
+z-index: -10;
 }
 .navbar1 {
-    list-style: none;
-    float: right;
+  list-style: none;
+  float: right;
 }
 
-  .navbar1 li {
-    line-height: 70px;
-    display: inline-block;
-    position: relative;
-    
-  }
-  .navbar1 li a {
-    text-decoration: none;
-    color:  #d0a772;
-    display: block;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0px 20px;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .navbar1 li a:hover {
-    background-color: white;
-    color: black;
-    transition: 0.5s;
-  }
-  .submenu{
-    position: absolute;
-    width: 270px;
-    left: 0;
-    top: 65px;
-    background-color: black;
-    z-index: 100;
-    text-align: left;
-    display: none;
-  }
-  .submenu li{
-    display: block;
-    padding: 0px;
-
-  }
-  .submenu li a{
-    font-size: 25px;
-    float: left;
-    line-height: 70px;
-  }
-  .submenu li:hover{
-    background-color: white;
-  }
-  .navbar1 li:hover .submenu{
-    display: block;
-  }
-  .fas{
-      padding-right: 5px;
-      font-size: 25px;
-  }
-  .fas.fa-bars{
-      font-size: 40px;
-  }
+.navbar1 li {
+  line-height: 70px;
+  display: inline-block;
+  position: relative;
   
-  @media(max-width:1199px) and (min-width:1000px){
-    #show-text{
-        display: none;
-    }
 }
-  @media(max-width:999px) and (min-width:944px){
+.navbar1 li a {
+  text-decoration: none;
+  color: #d0a772;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  transition:all 0.4s ease-in-out;
+}
+.fas{
+  padding-right: 5px;
+  font-size: 25px;
+}
+.navbar1 li a:hover {
+  background-color: white;
+  color: black;
+  font-size: 22px;
+  
+}
+.submenu{
+  position: absolute;
+  width: 270px;
+  left: 0;
+  top: 65px;
+  background-color: black;
+  z-index: 100;
+  text-align: left;
+  display: none;
+}
+.submenu li{
+  display: block;
+  padding: 0px;
+
+}
+.submenu li a{
+  font-size: 20px;
+  float: left;
+  line-height: 70px;
+}
+.submenu li:hover{
+  background-color: white;  
+}
+.navbar1 li:hover .submenu{
+  display: block;
+}
+
+.fas.fa-bars{
+    font-size: 40px;
+}
+
+@media(max-width:1199px) and (min-width:1000px){
+  #show-text{
+      display: none;
+  }
+}
+@media(max-width:999px) and (min-width:944px){
+.show-icon{
+    display: none;
+}
+.fas{
+  padding-left:20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  font-size: 35px;
+  align-items: center;
+}
+  .submenu li a{
+      font-size: 20px;
+  }
+}
+@media (max-width:943px) and (min-width:805px){
   .show-icon{
       display: none;
   }
   .fas{
-    padding-left:20px;
-    padding-right: 20px;
-    padding-top: 15px;
+    padding-left: 10px;
+    padding-right:10px;
+    padding-top:15px ;
     font-size: 35px;
     align-items: center;
 }
     .submenu li a{
         font-size: 20px;
     }
+
 }
-@media (max-width:943px) and (min-width:805px){
-    .show-icon{
-        display: none;
-    }
-    .fas{
-      padding-left: 10px;
-      padding-right:10px;
-      padding-top:15px ;
-      font-size: 35px;
-      align-items: center;
+
+@media (max-width:  804px) {
+  .show-button,
+  .hide-button {
+    display: block;
   }
-      .submenu li a{
-          font-size: 20px;
-      }
-
-}
-
-  @media (max-width:  804px) {
-    .show-button,
-    .hide-button {
-      display: block;
+  .navbar1 {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    text-align: center;
+    padding: 0px;
+    transition: 0.7s;
+    line-height: normal;
+  }
+  #chk:checked ~ .navbar1 {
+    right: 0;
+  }
+  .navbar1 li {
+    display: block;
+    padding: 15px 0;
+  }
+  .navbar1 li a {
+    display: block;
+  }
+  .hide-button {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+  }
+  .navbar1 li:hover .submenu{
+      display: none;
     }
-    .navbar1 {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 100%;
-      height: 100vh;
-      background-color: black;
-      text-align: center;
-      padding: 0px;
-      transition: 0.7s;
-      line-height: normal;
-    }
-    #chk:checked ~ .navbar1 {
-      right: 0;
-    }
-    .navbar1 li {
-      display: block;
-      padding: 15px 0;
-    }
-    .navbar1 li a {
-      display: block;
-    }
-    .hide-button {
-      position: absolute;
-      right: 20px;
-      top: 5px;
-    }
-    .navbar1 li:hover .submenu{
-        display: none;
-      }
-    
+  
 }

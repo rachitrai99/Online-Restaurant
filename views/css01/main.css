@@ -15,3 +15,7 @@ html{
     margin: 0px auto;
     position: relative;
 }
+body{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

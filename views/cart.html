@@ -18,62 +18,18 @@
 
   <script src="https://kit.fontawesome.com/fb65f5d132.js" crossorigin="anonymous"></script>
 
-  <title>FOOD VILLA</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+
+
+    </script>
+
+  <title>CART</title>
 </head>
 
 <body>
 
-  <div class="container1">
-    <div class="header1">
-
-      <div class="head1">FOOD VILLA</div>
-    </div>
-  </div>
-  <div class="navigation">
-    <input type="checkbox" id="chk">
-    <label for="chk" class="show-button">
-      <i class="fas fa-bars"></i>
-    </label>
-    <div class="logo1">
-      <img src="images/food-villa-2.jpg" alt=""></div>
-    <ul class="navbar1">
-      <li><a href="#home"><i id="show-text" title="HOME" class="fas fa-home"></i><span class="show-icon">HOME</span></a>
-      </li>
-      <li><a href="menu.html"><i id="show-text" title="MENU" class="fas fa-concierge-bell"></i><span
-            class="show-icon">MENU</span></a>
-        <ul class="submenu">
-          <li><a href="#starter"><i title="STARTER" class="fas fa-pizza-slice"></i>STARTER</a></li>
-          <li><a href="#drinks"><i title="DRINKS" class="fas fa-glass-martini"></i>DRINKS</a></li>
-          <li><a href="#main-course"><i title="MAIN-COURSE" class="fas fa-utensils"></i>MAIN-COURSE</a></li>
-          <li><a href="#desert"><i title="DESERT" class="fas fa-cookie-bite"></i>DESERT</a></li>
-        </ul>
-      </li>
-      <li><a href="gallery.html"><i id="show-text" title="GALLERY" class="fas fa-camera"></i><span
-            class="show-icon">GALLERY</span></a></li>
-      <li><a href="About.html"><i id="show-text" title="ABOUT" class="fas fa-info-circle"></i><span
-            class="show-icon"></i>ABOUT</span></a></li>
-      <li><a href="#contact"><i id="show-text" title="CONTACT" class="fas fa-address-book"></i><span
-            class="show-icon">CONTACT</span></a></li>
-      <li><a href="welcome"><i id="show-text" title="LOGIN" class="fas fa-user"></i></i><span
-            class="show-icon">LOGIN</span></a></li>
-      <li><a href="reservation.html"><i id="show-text" class="fas fa-book"></i><span
-            class="show-icon">RESERVATION</span></a></li>
-
-      <input type="checkbox" id="chk">
-      <label for="chk" class="hide-button">
-        <i class="fas fa-times"></i>
-      </label>
-    </ul>
-  </div>
-  <br>
-  <div class="all-page-title">
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>SPECIAL MENUE</h1>
-      </div>
-    </div>
-  </div>
-  <br>
+  <div id="header2"></div>
 
   <!-- menu -->
 
@@ -1250,6 +1206,12 @@
 
   <script>
 
+    $.get("header.html", function (data) {
+
+      $("#header2").replaceWith(data);
+    
+    });
+
     //counter
 
 
@@ -1639,7 +1601,7 @@
 
         alert("Please add some item. Thank you!");
 
-      
+
 
 
       } else {

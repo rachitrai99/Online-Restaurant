@@ -1,16 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: rgb(236, 230, 230);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 0px;
-}
+
 
 /* ALL PAGE TITLE:  */
 .all-page-title{
@@ -22,6 +10,9 @@ html{
     background-position: 0 0; 
     position: relative;
     z-index: 2;
+    width: 97.5%;
+    text-shadow: 5px 5px 5px black;
+    margin: 0px auto;
 }
 
 .all-page-title:before{
@@ -33,9 +24,50 @@ html{
     top: 0;
     width: 100%;
     z-index: 0;
-    opacity: 0.7;
+    opacity: 0;
 }
 
+@media (max-width:999px){
+    .all-page-title{
+        padding: 50px 0px 50px;
+        /* text goes up but th image remains fixed at a position  */
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 0 0; 
+        position: relative;
+        z-index: 2;
+        width: 95%;
+        margin: 0px auto;
+    }
+ }
+
+ @media (max-width:600px){
+    .all-page-title{
+        padding: 50px 0px 50px;
+        /* text goes up but th image remains fixed at a position  */
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 0 0; 
+        position: relative;
+        z-index: 2;
+        width: 94%;
+        margin: 0px auto;
+    }
+ }
+
+ @media (max-width:413px){
+    .all-page-title{
+        padding: 50px 0px 50px;
+        /* text goes up but th image remains fixed at a position  */
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 0 0; 
+        position: relative;
+        z-index: 2;
+        width: 93%;
+        margin: 0px auto;
+    }
+ }
 .all-page-title h1{
     font-size: 43px;
     letter-spacing: 2px;
@@ -71,33 +103,20 @@ html{
 	top: 320px;
 }
 
-.text-warning{
+h5 .text-warning{
 	color: #bd7043 !important;
 	font-size: 24px;
 }
 
-@media (min-width: 320px) and (max-width: 640px) {
-	.carousel-inner .carousel-item p{
-		font-size: 14px;
-	}
-	.carousel-control-prev{
-		left: -5px;
-	}
-	.carousel-control-next{
-		right: -5px;
-	}
- 	.carousel-indicators{
-		top: 400px;
-	}
-}
+
 
 #reviews .carousel-control-prev{
-	background: #d67c06;
+	background:#d67c06;
 	color: #ffffff;
 	display: block;
 	position: absolute;
-	width: 8%;
-	height: 50px;
+	width: 5%;
+	height: 45px;
 	top: 50%;
 	border-radius: 4px;
 	font-size: 28px;
@@ -109,19 +128,19 @@ html{
 }
 
 #reviews .carousel-control-next{
-	background: #d67c06;
 	color: #ffffff;
+	background: #d67c06;
 	display: block;
 	position: absolute;
-	width: 8%;
-	height: 50px;
+	width: 5%;
+	height: 45px;
 	top: 50%;
 	border-radius: 4px;
 	font-size: 28px;
 	opacity: 1;
 }
 #reviews .carousel-control-next:hover{
-	background: #010101;
+	background:black;
 	color: #ffffff;
 }
 
@@ -130,7 +149,7 @@ html{
 .upper {
     display: flex;
     background: #d0a772;
-    padding: 20px 0px;
+    padding:10px 0px;
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
@@ -138,7 +157,8 @@ html{
 }
 .upper .row .col-md-4{
     width: 400px;
-    margin: 10px 0px;
+    /* height: 60px; */
+    margin: 5px 0px 0px 0px;
 }
 .overflow-hidden {
     overflow: hidden;
@@ -186,11 +206,11 @@ html{
     padding: 0;
 }
  .lower{
-     padding-top: 30px ;
+     padding-top: 20px ;
      background-image: url(../images/footerBg01.jpg);    
      background-attachment: scroll;
      background-clip: initial;
-     background-color: rgba(0, 0, 0, 0);
+     background-color: black;
      background-origin: initial;
      background-position: center center;
      background-repeat: no-repeat;
@@ -202,7 +222,7 @@ html{
  }
 
  .lower::before{
-    background: #010101;
+    background:#010101;
     content: "";
     height: 100%;
     left: 0;
@@ -210,41 +230,43 @@ html{
     top: 0;
     width: 100%;
     z-index: 0;
-	opacity: 0.8;
  }
  .lower .row h3{
-    color: #ffffff;
+    color: white;
 	text-transform: uppercase;
 	font-size: 24px;
-	border-bottom: 1px dashed rgba(207, 166, 113, 0.5);
+	border-bottom: 1px dashed rgba(207,166,113,0.5);
     margin-bottom: 10px;
     margin-left: 10px;
  }
 .lower .row p{
 	font-size: 15px;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255,255,255,0.8);
 	margin: 0 10px;
-	padding-bottom: 10px;
+    padding-bottom: 10px;
+    opacity: 1;
 }
 .lower p.lead{
     font-size: 19px;
-	color: #ffffff;
+	color: white;
 	margin-bottom: 15px;
 }
 .lower  p.lead a{
-	color: #ffffff;
+	color: white;
     margin-bottom: 15px;
     margin-left: 0px;
 }
 .lower .row p.lead a:hover{
-	color: #d0a772;
+	color:  #d0a772 ;
 }
 .lower p a{
 	font-size: 18px;
-	color: #ffffff;
+    color: white;
+    transition: all 0.3s linear;
 }
 .lower p a:hover{
-	color: #d0a772;
+    font-size: 18px;
+    color: #d0a772;
 }
 
 .subscribe_form {
@@ -266,7 +288,7 @@ html{
     transition: all 0.5s ease-in-out;
 }
 
-.subscribe_form .submit {
+.subscribe_form .submit1 {
     background-color: #d0a772;
     color: #fff;
     font-size: 16px;
@@ -278,14 +300,21 @@ html{
     width: 100%;
 	border: none;
 	cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-.subscribe_form .submit:hover{
-	background-color:rgb(59, 58, 58);
+.subscribe_form .submit1:hover{
+    font-size: 20px ;
+    background-color: rgb(59,58,58);
+}
+
+.lower .row i{
+    transition:all 0.5s ease-in-out;
 }
 
 .lower .row i:hover{
-    color:#d0a772 ;
+    color: #d0a772;
+    font-size: 35px;
+    transform: rotate(360deg);
 }
 
 .f-social {
@@ -294,25 +323,102 @@ html{
     margin-top: 20px;
 }
 .f-social li a {
-    font-size: 25px;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
 	margin-right: 10px;
 }
 
 .copyright{
-	margin-top: 20px;
+	margin-top: 5px;
 	position: relative;
 	display: block;
-	background-color: #010101;
-	border-top: 1px dashed rgba(207, 166, 113);
-	padding: 30px 0;
+	background-color: black;
+    border-top: 1px dashed  #d0a772;
+    
+	padding: 5px 0;
 	z-index: 1;
 }
 
 .copyright .company-name{
 	font-size: 16px;
-	text-align: center;
+    text-align: center;
+    /* color: white; */
 }
 .copyright .company-name a{
 	font-size: 16px;
+}
+
+@media   (max-width: 640px) {
+	.carousel-inner .carousel-item p{
+		font-size: 14px;
+	}
+	.carousel-control-prev{
+		left: -5px;
+	}
+	.carousel-control-next{
+		right: -5px;
+	}
+ 	.carousel-indicators{
+		top: 400px;
+    }
+    .upper {
+        display: flex;
+        padding: 10px 0px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        padding-right: 0px;
+    
+    }
+    .upper .row .col-md-4{
+        width: 100%;
+        margin: 10px 0px;
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+    .overflow-hidden {
+        overflow: hidden;
+    }
+    
+    .upper i{
+        display: block;
+        float: left;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: #fff;
+
+        font-size: 30px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    
+    .upper h4{
+        margin: 0px;
+        margin-top: 5px;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 0px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    
+    .upper p{
+        margin: 0px;
+        color: #ffffff;
+        font-weight: 300;
+    }
+    .lead {
+        font-size: 18px;
+        line-height: 30px;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
 }
