@@ -11,6 +11,7 @@ h1.subMenuName {
     position: sticky;
     padding: 10px;
     margin-bottom: 0px;
+    z-index: 10;
   }
   hr {
     width: 100%;
@@ -20,6 +21,7 @@ h1.subMenuName {
     border-color: black;
     margin: 0px;
     padding: 0px;
+    z-index: 10;
   }
   .subMenu {
     width: 800px;
