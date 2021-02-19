@@ -15,7 +15,7 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 router.use(express.static('views'));
 router.get('/',forwardAuthenticated,function(req,res){
   res.sendFile(path.join(__dirname,'views','/index.html'));
-  //__dirname : It will resolve to your project folder.s
+  //__dirname : It will resolve to your project folders
 });  
 
 router.get('/welcome', forwardAuthenticated, (req, res) => res.render('welcome'));
@@ -23,14 +23,19 @@ router.get('/welcome', forwardAuthenticated, (req, res) => res.render('welcome')
 router.use(express.static('views'));
 router.get('/cart',forwardAuthenticated,function(req,res){
   res.sendFile(path.join(__dirname,'views','/cart.html'));
-  //__dirname : It will resolve to your project folder.s
+  
 }); 
 
 
 router.get('/checkOut',forwardAuthenticated,function(req,res){
   res.sendFile(path.join(__dirname,'views','/checkOut.html'));
-  //__dirname : It will resolve to your project folder.s
+  
 });  
+
+router.get('/checkout',forwardAuthenticated,function(req,res){
+  res.sendFile(path.join(__dirname,'views','sendEmail/checkout.html'));
+  //__dirname : It will resolve to your project folder.s
+});
 
 // Dashboard
 

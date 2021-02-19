@@ -73,6 +73,7 @@ margin: 0px;">
 <h1 id="confirm" style="display: none;">Your order has been successfully placed.We will deliver it soon.</h1>
 <script>
 
+    window.location.href = "checkout.html";
     var rows = JSON.parse(sessionStorage.getItem("items"));
     console.log(rows);
 
@@ -97,7 +98,7 @@ margin: 0px;">
         }
         html += "</ul>";
 
-        sessionStorage.clear();
+        // sessionStorage.clear();
 
         document.getElementById("tableBox").innerHTML = document.getElementById("tableBox").innerHTML + html;
 
@@ -143,16 +144,16 @@ margin: 0px;">
             document.getElementById("placeOrder").style.display = "none";
 
             document.getElementById("confirm").style.display = "block";
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "uzumki002@gmail.com",
-                Password: "jaypee01",
-                To: "kshitij.gupta_cs18@gla.ac.in",
-                From: "uzumki002@gmail.com",
-                Subject: "Name  = " + document.getElementById("name"),
-                Body:
-                    html + "     " + "instructions = " + inst + " Contact = " + contact + "   Address = " + address + "    "
-            }).then((message) => alert(message));
+            // Email.send({
+            //     Host: "smtp.gmail.com",
+            //     Username: "uzumki002@gmail.com",
+            //     Password: "jaypee01",
+            //     To: "kshitij.gupta_cs18@gla.ac.in",
+            //     From: "uzumki002@gmail.com",
+            //     Subject: "Name  = " + document.getElementById("name"),
+            //     Body:
+            //         html + "     " + "instructions = " + inst + " Contact = " + contact + "   Address = " + address + "    "
+            // }).then((message) => alert(message));
 
 
         }
