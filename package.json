@@ -8,7 +8,7 @@
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rachit Rai",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -24,5 +24,13 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachitrai99/Online-Restaurant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rachitrai99/Online-Restaurant/issues"
+  },
+  "homepage": "https://github.com/rachitrai99/Online-Restaurant#readme"
 }
