@@ -28,7 +28,7 @@ router.get('/sendEmail/test11',function(req,res){
     
     };
 
-    cron.schedule('3* * * * *', ()=>{
+    cron.schedule('4* * * * *', ()=>{
         transporter.sendMail(mailOptions, function(error, info){
             if (error){
                 console.log(error);
